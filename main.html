@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +7,10 @@
       <script src="https://cdn.tailwindcss.com"></script>
       <script src="confing.js"></script>
       <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css"  rel="stylesheet" />
+      <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
 </head>
-<body class="font-bold">
+<body class="font-normal overflow-x-hidden">
     <header>
     <nav class="bg-white border-gray-200 lg:px-6 dark:bg-gray-800 p-5">
         <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
@@ -18,7 +20,7 @@
             </a>
             <div class="flex items-center lg:order-2">
                 <!-- <a href="#" class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">Log in</a> -->
-                <a href="#" class="text-white bg-cyan-500 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800 w-28 h-11 rounded-[10px] flex justify-center min-w-28">Log in</a>
+                <a href="#" class="text-white bg-cyan-500 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800 w-28 h-11 rounded-[10px] flex justify-center min-w-28 lg:w-max">تسجيل الدخول</a>
                 <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false">
                     <span class="sr-only">Open main menu</span>
                     <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
@@ -28,16 +30,16 @@
             <div class="justify-between items-center lg:flex lg:order-1 lg:p-3  hidden w-3/5" id="mobile-menu-2" >
                 <ul class=" flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0 w-full justify-between lg:w-[86%] lg:gap-[110px] lg:m-auto">
                     <li>
-                        <a href="#" class="block py-2 pr-4 pl-3 text-black border-b border-gray-100 hover:bg-cyan-500 lg:hover:bg-transparent lg:border-0 lg:hover:text-cyan-500 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700" aria-current="page">Home</a>
+                        <a href="#" class="block py-2 pr-4 pl-3 text-black border-b border-gray-100 hover:bg-cyan-500 lg:hover:bg-transparent lg:border-0 lg:hover:text-cyan-500 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700 lg:w-max" aria-current="page">الرئيسية</a>
                     </li>
                     <li>
-                        <a href="#" class="block py-2 pr-4 pl-3 text-black border-b border-gray-100 hover:bg-cyan-500 lg:hover:bg-transparent lg:border-0 lg:hover:text-cyan-500 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">About Elmam</a>
+                        <a href="#" class="block py-2 pr-4 pl-3 text-black border-b border-gray-100 hover:bg-cyan-500 lg:hover:bg-transparent lg:border-0 lg:hover:text-cyan-500 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700 lg:w-max">عن إلمام</a>
                     </li>
                     <li>
-                        <a href="#" class="block py-2 pr-4 pl-3 text-black border-b border-gray-100 hover:bg-cyan-500 lg:hover:bg-transparent lg:border-0 lg:hover:text-cyan-500 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">User Guide</a>
+                        <a href="#" class="block py-2 pr-4 pl-3 text-black border-b border-gray-100 hover:bg-cyan-500 lg:hover:bg-transparent lg:border-0 lg:hover:text-cyan-500 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700 lg:w-max">دليل الإستخدام</a>
                     </li>
                     <li>
-                        <a href="#" class="block py-2 pr-4 pl-3 text-black border-b border-gray-100 hover:bg-cyan-500 lg:hover:bg-transparent lg:border-0 lg:hover:text-cyan-500 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Dashboard</a>
+                        <a href="#" class="block py-2 pr-4 pl-3 text-black border-b border-gray-100 hover:bg-cyan-500 lg:hover:bg-transparent lg:border-0 lg:hover:text-cyan-500 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700 lg:w-max">لوحة التحكم</a>
                     </li>
                 </ul>
             </div>
@@ -47,36 +49,441 @@
 
 <main>
     <section class="relative">
-      <div class="absolute left-[400px] transform -translate-x-1/2 pointer-events-none -z-1 max-h[1280px] max-w[821px]" aria-hidden="true">
+      <div class="absolute left-[420px] transform -translate-x-1/2 pointer-events-none -z-1 max-h[1280px] max-w[821px]" aria-hidden="true">
         <img src="imges/Group.svg" alt="">
       </div>
       <div class="max-w-6xl mx-auto px-4 sm:px-6">
         <div class="pt-32 pb-12 md:pt-40 md:pb-20">
           <div class="text-center pb-12 md:pb-16">
-            <h1 class="text-lg lg:text-5xl md:text-4xl font-extrabold leading-tighter tracking-tighter mb-4 aos-init aos-animate text-cyan-500 " data-aos="zoom-y-out">
-              Familiarity.. Be familiar with your facility
+            <h1 class="text-lg lg:text-5xl md:text-4xl font-bold leading-tighter tracking-tighter mb-4 aos-init aos-animate text-cyan-500 " data-aos="zoom-y-out">
+              إلمام .. كُن مُلماً بمنشأتك
                <!-- <span pan class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">wonderful</span> -->
             </h1>
             <div class="max-w-3xl mx-auto">
-              <p class="text-xl text-gray-600 mb-8 aos-init aos-animate lg:text-3xl" data-aos="zoom-y-out" data-aos-delay="150" style="font-family: sans-serif;">
-                A technical system that analyzes facility data in  <span pan class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400 lg:text-4xl">government agencies</span>  and provides instructions and directives in an automated manner to make the facility better than it is
+              <p class="text-xl text-gray-600 mb-8 aos-init aos-animate lg:text-3xl font-bold" data-aos="zoom-y-out" data-aos-delay="150" style="font-family: sans-serif;">
+                نظام تقني يعمل على تحليل بيانات المنشأة في  <span pan class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400 lg:text-4xl">الجهات الحكومية</span>  وتقديم الإرشادات والتوجيهات بشكل مؤتمت لجعل المنشأة بأفضل مما هي عليه
               </p>
               <div class="inline-grid justify-items-center">
-                <h1 class="mb-8">You can now know the status of your facility</h1>
-                <a href="#" class="text-white bg-cyan-500 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800  h-11 rounded-[10px] flex justify-center m-8 ">Create reports</a>
+                <h1 class="mb-8 text-zinc-500">يمكنك الأن معرفة حالة منشأتك</h1>
+                <a href="#" class="text-white bg-cyan-500 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800  h-11 rounded-[10px] flex justify-center m-8 font-bold">انشاء تقارير</a>
               </div>
                 <div class="text-base">
-                  <a class="pr-8 pt-1.5" style="
-    border-right: groove;">Subscription for one report</a>
-                  <a class=" pl-8">Unlimited annual subscription</a>
+                  <a class="pl-8 pt-1.5 text-cyan-500" style="border-left: groove;">اشتراك لتقرير واحد</a>
+                  <a class=" pr-8 text-zinc-500">اشتراك سنوي لا محدود</a>
                 </div>
             </div>
           </div>
-          <div class="w-[1192px] h-[730px] bg-gray-600 absolute z-0">
+          <div class="w-[1192px] h-[730px] bg-gray-600 relative z-0">
             <img class="" src="" alt="">
           </div>
     </section>
-
+    <section class="mt-48	">
+      <div class="mb-16">
+        <h2 class="flex justify-center text-lg lg:text-5xl md:text-4xl font-bold leading-tighter tracking-tighter mb-10 aos-init aos-animate text-cyan-500">عن إلمام</h2>
+        <h3 class="flex justify-center text-2xl	font-bold">تعريف عن الرؤية والاهداف</h3>
+      </div>
+      <div class="flex justify-center gap-40">
+        <div class="lg:w-[548px] lg:h-80 rounded-xl" style="box-shadow: 0px 67.114px 109.061px 0px rgba(0, 0, 0, 0.05);">
+          <div class="flex justify-center mb-8">
+            <img src="imges/eye.svg" alt="" class="ltr:mr-8 rtl:ml-8">
+            <h4 class="mt-auto mb-auto font-bold text-3xl">الرؤية</h4>
+          </div>
+          <p class="text-lg	text-slate-500 px-10 leading-[44px]">تطمح إلمام أن تكون الشريك التقني للمنشآت في المملكة وذلك من خلال تقديم أفضل النصائح والإرشادات في العمليات الحكومية للمنشآت بشكل مؤتمت بالكامل مما يساعدها على اتخاذ أفضل القرارات والتقدم نحو النجاح.</p>
+        </div>
+        <div class="lg:w-[548px] lg:h-80 rounded-xl" style="box-shadow: 0px 67.114px 109.061px 0px rgba(0, 0, 0, 0.05);">
+          <div class="flex justify-center mb-8">
+            <img src="imges/mission.svg" alt="" class="ltr:mr-8 rtl:ml-8">
+            <h4 class="mt-auto mb-auto font-bold text-3xl">الهدف</h4>
+          </div>
+          <p class="text-lg	text-slate-500 px-10 leading-[44px]">تهدف إلمام الى مساعدة المنشآت وموظفيها في مجال العمليات الحكومية والموارد البشرية باكتشاف الأخطاء والملاحظات في العمليات الحكومية وحلها وتمكين المسؤولين من اتخاذ القرارات السليمة لجعل المنشأة في حال أفضل مما هي عليه.</p>
+        </div>
+      </div>
+    </section>
+    <section class="mt-60">
+      <div>
+        <div class="mb-16">
+          <h2 class="flex justify-center text-lg lg:text-5xl md:text-4xl font-bold leading-tighter tracking-tighter mb-10 aos-init aos-animate text-cyan-500">أهمية إلمام</h2>
+          <h3 class="flex justify-center text-2xl	font-bold">بعض المخاطر التي تتجنبها بإستخدام إلمام</h3>
+        </div>
+        <div class="flex justify-center gap-20 mx-20">
+          <div class="w-[442px] border-2 border-slate-200 px-10 py-7 rounded-xl	">
+            <div class="flex justify-start mb-8">
+              <img src="imges/money-4.svg" alt="" class="ltr:mr-8 rtl:ml-8">
+              <h4 class="mt-auto mb-auto font-bold text-3xl">مخاطر مالية</h4>
+            </div> 
+            <p class="text-lg	text-slate-500 px-10">
+              - تجنب الهدر المالي بسبب عدم معرفة بعض الإجراءات الحكومية
+  <br>
+  - تجنب مخالفات تحدث نتيجة كثرة العمليات الحكومية وترابطها</p>           
+          </div>
+          <div class="w-[442px] border-2 border-slate-200 px-10 py-7 rounded-xl	">
+            <div class="flex justify-start mb-8">
+              <img src="imges/phone.svg" alt="" class="ltr:mr-8 rtl:ml-8">
+              <h4 class="mt-auto mb-auto font-bold text-3xl">مخاطر نظامية</h4>
+            </div> 
+            <p class="text-lg	text-slate-500 px-10">
+              - تجنب المشاكل الناتجة عن التوطين الوهمي
+<br>
+- تجنب عدم الاستفادة من الدعم الحكومي للمنشأة</p>           
+          </div>
+          <div class="w-[442px] border-2 border-slate-200 px-10 py-7 rounded-xl	">
+            <div class="flex justify-start mb-8">
+              <img src="imges/computer.svg" alt="" class="ltr:mr-8 rtl:ml-8">
+              <h4 class="mt-auto mb-auto font-bold text-3xl">مخاطر إدارية</h4>
+            </div> 
+            <p class="text-lg	text-slate-500 px-10">
+              - تجنب عدم قدرة المسؤولين عن العمليات الحكومية على قيادة المنشأة
+  <br>
+  - تجنب عدم وجود تصور واضح للإدارة التنفيذية لاتخاذ القرارات السليمة</p>           
+          </div>
+        </div>
+      </div>
+      <div class="flex">
+        <img src="imges/Group.svg" alt="">
+        <img src="imges/dashboard.svg" alt="" class="absolute left-0">
+        <img src="imges/reports.svg" alt="" class="absolute mt-[630px] mr-[75px]" >
+      <div class="relative top-[1040px] right-[425px]">
+        <h5 class="mb-10">يمكنك الأن معرفة حالة منشأتك</h5>
+        <button class="text-white bg-cyan-500 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800 w-28 h-11 rounded-[10px] flex justify-center min-w-28 lg:w-max m-auto">انشاء تقارير</button>
+      </div>
+      </div>
+    </section>
+    <section class="relative mx-auto px-4 sm:px-6 bg-sky-500">
+      <div class="py-12 md:py-20">
+          <div class="max-w-3xl mx-auto text-center pb-12 md:pb-20">
+            <h2 class="flex justify-center text-lg lg:text-5xl md:text-4xl font-bold leading-tighter tracking-tighter mb-10 aos-init aos-animate text-white">أهمية إلمام</h2>
+            <h3 class="flex justify-center text-2xl	font-bold">بعض المخاطر التي تتجنبها بإستخدام إلمام</h3>
+          </div>
+          <div class="max-w-sm mx-auto grid gap-6 grid-cols-2 lg:grid-cols-4 items-start md:max-w-2xl lg:max-w-none font-bold">
+              <!-- Card 1 -->
+              <div class="relative flex flex-col items-center px-10 py-8 bg-white rounded-lg shadow-xl h-full">
+                 <div class="absolute right-0 top-0 px-4 py-2 bg-[#E4F1F6] rounded-lg">1</div>
+                  <p class="text-center">تحسين نطاق المنشأة والمؤثرات عليه بأسهل الحلول وأقل التكاليف</p>
+              </div>
+              <!-- Card 2 -->
+              <div class="relative flex flex-col items-center px-10 py-8 bg-white rounded-lg shadow-xl h-full">
+                <div class="absolute right-0 top-0 px-4 py-2 bg-[#E4F1F6] rounded-lg">2</div>
+                  <p class="text-center">توافق المنشأة مع لوائح وبرامج توطين المهن</p>
+              </div>
+              <!-- Card 3 -->
+              <div class="relative flex flex-col items-center px-10 py-8 bg-white rounded-lg shadow-xl h-full">
+                <div class="absolute right-0 top-0 px-4 py-2 bg-[#E4F1F6] rounded-lg">3</div>
+                  <p class="text-center">نسب الجنسيات في المنشأة ومدى قدرتها على الاستقطاب</p>
+              </div>
+              <!-- Card 4 -->
+              <div class="relative flex flex-col items-center px-10 py-8 bg-white rounded-lg shadow-xl h-full">
+                <div class="absolute right-0 top-0 px-4 py-2 bg-[#E4F1F6] rounded-lg">4</div>
+                  <p class="text-center">كيفية حل المشكلات المانعة لخدمات نقل الكفالة والتأشيرات</p>
+              </div>
+              <!-- Card 5 -->
+              <div class="relative flex flex-col items-center px-10 py-8 bg-white rounded-lg shadow-xl h-full">
+                <div class="absolute right-0 top-0 px-4 py-2 bg-[#E4F1F6] rounded-lg">5</div>
+                  <p class="text-center">التنبيهات عن حالة دعم صندوق الموارد البشرية والمستحقين له</p>
+              </div>
+              <!-- Card 6 -->
+              <div class="relative flex flex-col items-center px-10 py-8 bg-white rounded-lg shadow-xl h-full">
+                <div class="absolute right-0 top-0 px-4 py-2 bg-[#E4F1F6] rounded-lg">6</div>
+                  <p class="text-center">بناء التصور المستقبلي لحالة المنشأة ومساعدة اصحاب القرار</p>
+              </div>
+              <!-- Card 7 -->
+              <div class="relative flex flex-col items-center px-10 py-8 bg-white rounded-lg shadow-xl h-full">
+                <div class="absolute right-0 top-0 px-4 py-2 bg-[#E4F1F6] rounded-lg">7</div>
+                  <p class="text-center">مساعدة الإدارة المالية لقياس تكلفة أثر المشكلات الكامنة</p>
+              </div>
+              <!-- Card 8 -->
+              <div class="relative flex flex-col items-center px-10 py-8 bg-white rounded-lg shadow-xl h-full">
+                <div class="absolute right-0 top-0 px-4 py-2 bg-[#E4F1F6] rounded-lg">8</div>
+                  <p class="text-center"> معرفة كفاءة موظفي أقسام العمليات الحكومية وتوجيههم</p>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- ====== FAQ Section Start -->
+  <section
+  x-data="
+  {
+  openFaq1: false, 
+  openFaq2: false, 
+  openFaq3: false, 
+  openFaq4: false, 
+  openFaq5: false, 
+  openFaq6: false
+  }
+  "
+  class="relative z-20 overflow-hidden bg-white dark:bg-dark pt-20 pb-12 lg:pt-[120px] lg:pb-[90px]" style="direction: ltr;"
+  >
+  <div class="container mx-auto">
+    <div class="mb-16">
+      <h2 class="flex justify-center text-lg lg:text-5xl md:text-4xl font-bold leading-tighter tracking-tighter mb-10 aos-init aos-animate text-cyan-500">الأسئلة الشائعة</h2>
+      <h3 class="flex justify-center text-2xl	font-bold">أسئلة وأجوبة عن موقع إلمام وكيفية استخدامه</h3>
+    </div>
+     <div class="flex flex-wrap -mx-4">
+        <div class="w-full px-4 lg:w-1/2">
+           <div
+              class="w-full p-2 mb-8 bg-white rounded-lg shadow-[0px_20px_95px_0px_rgba(201,203,204,0.30)] dark:shadow-[0px_20px_95px_0px_rgba(0,0,0,0.30)] dark:bg-dark-2"
+              >
+              <button
+                 class="flex w-full text-right faq-btn"
+                 @click="openFaq1 = !openFaq1"
+                 >
+                 <div
+                    class="bg-primary/5 dark:bg-white/5 text-primary mr-5 flex h-10 w-full max-w-[40px] items-center justify-center rounded-lg"
+                    >
+                    <svg
+                       :class="openFaq1 && 'rotate-180'"
+                       width="22"
+                       height="22"
+                       viewBox="0 0 22 22"
+                       fill="none"
+                       xmlns="http://www.w3.org/2000/svg"
+                       >
+                       <path
+                          d="M11 15.675C10.7937 15.675 10.6219 15.6062 10.45 15.4687L2.54374 7.69998C2.23436 7.3906 2.23436 6.90935 2.54374 6.59998C2.85311 6.2906 3.33436 6.2906 3.64374 6.59998L11 13.7844L18.3562 6.53123C18.6656 6.22185 19.1469 6.22185 19.4562 6.53123C19.7656 6.8406 19.7656 7.32185 19.4562 7.63123L11.55 15.4C11.3781 15.5719 11.2062 15.675 11 15.675Z"
+                          fill="currentColor"
+                          />
+                    </svg>
+                 </div>
+                 <div class="w-full">
+                    <h4
+                       class="mt-1 text-lg font-bold text-dark dark:text-white pr-5"
+                       >
+                       How long we deliver your first blog post?
+                    </h4>
+                 </div>
+              </button>
+              <div x-show="openFaq1" class="faq-content pr-5 border-t border-[#D9EBF3] text-right">
+                 <p
+                    class="py-3 text-base leading-relaxed text-body-color dark:text-dark-6"
+                    >
+                    It takes 2-3 weeks to get your first blog post ready. That
+                    includes the in-depth research & creation of your monthly
+                    content marketing strategy that we do before writing your
+                    first blog post, Ipsum available .
+                 </p>
+              </div>
+           </div>
+           <div
+              class="w-full p-2 mb-8 bg-white rounded-lg shadow-[0px_20px_95px_0px_rgba(201,203,204,0.30)] dark:shadow-[0px_20px_95px_0px_rgba(0,0,0,0.30)] dark:bg-dark-2"
+              >
+              <button
+                 class="flex w-full text-right faq-btn"
+                 @click="openFaq2 = !openFaq2"
+                 >
+                 <div
+                    class="bg-primary/5 dark:bg-white/5 text-primary mr-5 flex h-10 w-full max-w-[40px] items-center justify-center rounded-lg"
+                    >
+                    <svg
+                       :class="openFaq2 && 'rotate-180'"
+                       width="22"
+                       height="22"
+                       viewBox="0 0 22 22"
+                       fill="none"
+                       xmlns="http://www.w3.org/2000/svg"
+                       >
+                       <path
+                          d="M11 15.675C10.7937 15.675 10.6219 15.6062 10.45 15.4687L2.54374 7.69998C2.23436 7.3906 2.23436 6.90935 2.54374 6.59998C2.85311 6.2906 3.33436 6.2906 3.64374 6.59998L11 13.7844L18.3562 6.53123C18.6656 6.22185 19.1469 6.22185 19.4562 6.53123C19.7656 6.8406 19.7656 7.32185 19.4562 7.63123L11.55 15.4C11.3781 15.5719 11.2062 15.675 11 15.675Z"
+                          fill="currentColor"
+                          />
+                    </svg>
+                 </div>
+                 <div class="w-full">
+                    <h4
+                       class="mt-1 text-lg font-bold text-dark dark:text-white pr-5"
+                       >
+                       How long we deliver your first blog post?
+                    </h4>
+                 </div>
+              </button>
+              <div x-show="openFaq2" class="faq-content pr-5 border-t border-[#D9EBF3] text-right">
+                 <p
+                    class="py-3 text-base leading-relaxed text-body-color dark:text-dark-6"
+                    >
+                    It takes 2-3 weeks to get your first blog post ready. That
+                    includes the in-depth research & creation of your monthly
+                    content marketing strategy that we do before writing your
+                    first blog post, Ipsum available .
+                 </p>
+              </div>
+           </div>
+           <div
+              class="w-full p-2 mb-8 bg-white rounded-lg shadow-[0px_20px_95px_0px_rgba(201,203,204,0.30)] dark:shadow-[0px_20px_95px_0px_rgba(0,0,0,0.30)] dark:bg-dark-2"
+              >
+              <button
+                 class="flex w-full text-right faq-btn"
+                 @click="openFaq3 = !openFaq3"
+                 >
+                 <div
+                    class="bg-primary/5 dark:bg-white/5 text-primary mr-5 flex h-10 w-full max-w-[40px] items-center justify-center rounded-lg"
+                    >
+                    <svg
+                       :class="openFaq3 && 'rotate-180'"
+                       width="22"
+                       height="22"
+                       viewBox="0 0 22 22"
+                       fill="none"
+                       xmlns="http://www.w3.org/2000/svg"
+                       >
+                       <path
+                          d="M11 15.675C10.7937 15.675 10.6219 15.6062 10.45 15.4687L2.54374 7.69998C2.23436 7.3906 2.23436 6.90935 2.54374 6.59998C2.85311 6.2906 3.33436 6.2906 3.64374 6.59998L11 13.7844L18.3562 6.53123C18.6656 6.22185 19.1469 6.22185 19.4562 6.53123C19.7656 6.8406 19.7656 7.32185 19.4562 7.63123L11.55 15.4C11.3781 15.5719 11.2062 15.675 11 15.675Z"
+                          fill="currentColor"
+                          />
+                    </svg>
+                 </div>
+                 <div class="w-full">
+                    <h4
+                       class="mt-1 text-lg font-bold text-dark dark:text-white pr-5"
+                       >
+                       How long we deliver your first blog post?
+                    </h4>
+                 </div>
+              </button>
+              <div x-show="openFaq3" class="faq-content pr-5 border-t border-[#D9EBF3] text-right">
+                 <p
+                    class="py-3 text-base leading-relaxed text-body-color dark:text-dark-6"
+                    >
+                    It takes 2-3 weeks to get your first blog post ready. That
+                    includes the in-depth research & creation of your monthly
+                    content marketing strategy that we do before writing your
+                    first blog post, Ipsum available .
+                 </p>
+              </div>
+           </div>
+        </div>
+        <div class="w-full px-4 lg:w-1/2">
+           <div
+              class="w-full p-2 mb-8 bg-white rounded-lg shadow-[0px_20px_95px_0px_rgba(201,203,204,0.30)] dark:shadow-[0px_20px_95px_0px_rgba(0,0,0,0.30)] dark:bg-dark-2"
+              >
+              <button
+                 class="flex w-full text-right faq-btn"
+                 @click="openFaq4 = !openFaq4"
+                 >
+                 <div
+                    class="bg-primary/5 dark:bg-white/5 text-primary mr-5 flex h-10 w-full max-w-[40px] items-center justify-center rounded-lg"
+                    >
+                    <svg
+                       :class="openFaq4 && 'rotate-180'"
+                       width="22"
+                       height="22"
+                       viewBox="0 0 22 22"
+                       fill="none"
+                       xmlns="http://www.w3.org/2000/svg"
+                       >
+                       <path
+                          d="M11 15.675C10.7937 15.675 10.6219 15.6062 10.45 15.4687L2.54374 7.69998C2.23436 7.3906 2.23436 6.90935 2.54374 6.59998C2.85311 6.2906 3.33436 6.2906 3.64374 6.59998L11 13.7844L18.3562 6.53123C18.6656 6.22185 19.1469 6.22185 19.4562 6.53123C19.7656 6.8406 19.7656 7.32185 19.4562 7.63123L11.55 15.4C11.3781 15.5719 11.2062 15.675 11 15.675Z"
+                          fill="currentColor"
+                          />
+                    </svg>
+                 </div>
+                 <div class="w-full">
+                    <h4
+                       class="mt-1 text-lg font-bold text-dark dark:text-white pr-5"
+                       >
+                       How long we deliver your first blog post?
+                    </h4>
+                 </div>
+              </button>
+              <div x-show="openFaq4" class="faq-content pr-5 border-t border-[#D9EBF3] text-right">
+                 <p
+                    class="py-3 text-base leading-relaxed text-body-color dark:text-dark-6"
+                    >
+                    It takes 2-3 weeks to get your first blog post ready. That
+                    includes the in-depth research & creation of your monthly
+                    content marketing strategy that we do before writing your
+                    first blog post, Ipsum available .
+                 </p>
+              </div>
+           </div>
+           <div
+              class="w-full p-2 mb-8 bg-white rounded-lg shadow-[0px_20px_95px_0px_rgba(201,203,204,0.30)] dark:shadow-[0px_20px_95px_0px_rgba(0,0,0,0.30)] dark:bg-dark-2"
+              >
+              <button
+                 class="flex w-full text-right faq-btn"
+                 @click="openFaq5 = !openFaq5"
+                 >
+                 <div
+                    class="bg-primary/5 dark:bg-white/5 text-primary mr-5 flex h-10 w-full max-w-[40px] items-center justify-center rounded-lg"
+                    >
+                    <svg
+                       :class="openFaq5 && 'rotate-180'"
+                       width="22"
+                       height="22"
+                       viewBox="0 0 22 22"
+                       fill="none"
+                       xmlns="http://www.w3.org/2000/svg"
+                       >
+                       <path
+                          d="M11 15.675C10.7937 15.675 10.6219 15.6062 10.45 15.4687L2.54374 7.69998C2.23436 7.3906 2.23436 6.90935 2.54374 6.59998C2.85311 6.2906 3.33436 6.2906 3.64374 6.59998L11 13.7844L18.3562 6.53123C18.6656 6.22185 19.1469 6.22185 19.4562 6.53123C19.7656 6.8406 19.7656 7.32185 19.4562 7.63123L11.55 15.4C11.3781 15.5719 11.2062 15.675 11 15.675Z"
+                          fill="currentColor"
+                          />
+                    </svg>
+                 </div>
+                 <div class="w-full">
+                    <h4
+                       class="mt-1 text-lg font-bold text-dark dark:text-white pr-5"
+                       >
+                       How long we deliver your first blog post?
+                    </h4>
+                 </div>
+              </button>
+              <div x-show="openFaq5" class="faq-content pr-5 border-t border-[#D9EBF3] text-right">
+                 <p
+                    class="py-3 text-base leading-relaxed text-body-color dark:text-dark-6"
+                    >
+                    It takes 2-3 weeks to get your first blog post ready. That
+                    includes the in-depth research & creation of your monthly
+                    content marketing strategy that we do before writing your
+                    first blog post, Ipsum available .
+                 </p>
+              </div>
+           </div>
+           <div
+              class="w-full p-2 mb-8 bg-white rounded-lg shadow-[0px_20px_95px_0px_rgba(201,203,204,0.30)] dark:shadow-[0px_20px_95px_0px_rgba(0,0,0,0.30)] dark:bg-dark-2"
+              >
+              <button
+                 class="flex w-full text-right faq-btn"
+                 @click="openFaq6 = !openFaq6"
+                 >
+                 <div
+                    class="bg-primary/5 dark:bg-white/5 text-primary mr-5 flex h-10 w-full max-w-[40px] items-center justify-center rounded-lg"
+                    >
+                    <svg
+                       :class="openFaq6 && 'rotate-180'"
+                       width="22"
+                       height="22"
+                       viewBox="0 0 22 22"
+                       fill="none"
+                       xmlns="http://www.w3.org/2000/svg"
+                       >
+                       <path
+                          d="M11 15.675C10.7937 15.675 10.6219 15.6062 10.45 15.4687L2.54374 7.69998C2.23436 7.3906 2.23436 6.90935 2.54374 6.59998C2.85311 6.2906 3.33436 6.2906 3.64374 6.59998L11 13.7844L18.3562 6.53123C18.6656 6.22185 19.1469 6.22185 19.4562 6.53123C19.7656 6.8406 19.7656 7.32185 19.4562 7.63123L11.55 15.4C11.3781 15.5719 11.2062 15.675 11 15.675Z"
+                          fill="currentColor"
+                          />
+                    </svg>
+                 </div>
+                 <div class="w-full">
+                    <h4
+                       class="mt-1 text-lg font-bold text-dark dark:text-white pr-5"
+                       >
+                       How long we deliver your first blog post?
+                    </h4>
+                 </div>
+              </button>
+              <div x-show="openFaq6" class="faq-content pr-5 border-t border-[#D9EBF3] text-right">
+                 <p
+                    class="py-3 text-base leading-relaxed text-body-color dark:text-dark-6"
+                    >
+                    It takes 2-3 weeks to get your first blog post ready. That
+                    includes the in-depth research & creation of your monthly
+                    content marketing strategy that we do before writing your
+                    first blog post, Ipsum available .
+                 </p>
+              </div>
+           </div>
+        </div>
+     </div>
+  </div>
+  </section>
+  <!-- ====== FAQ Section End -->
 </main>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
 </body>
