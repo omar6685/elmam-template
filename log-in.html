@@ -13,22 +13,22 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 <body class="font-normal overflow-x-hidden" style="
     font-family: Janna LT;">
-    <section class="flex justify-between	">
-        <div class="ml-[139px]">
+    <section class="flex justify-end xl:justify-between sm:justify-center	">
+        <div class="xl:ml-[139px] m-auto">
             <div class="flex justify-center self-center  z-10">
-        		<div class="p-12 bg-white mx-auto rounded-3xl w-96 w-fit ">
+        		<div class="rounded-3xl w-fit ">
                     <div class="mt-[83px]">
         
-        					<img src="imges/logo-2-log-in.svg" class="mb-[73px] m-auto" alt="" >
+        					<img src="imges/logo-2-log-in.svg" class="mb-6 md:mb-[76px] xl:mb[73px] m-auto w-24 h-[59px] md:w-[208px] md:h-[129px] xl:w-[144px] xl:h-[89px]" alt="" >
         
-                        <h1 class="mb-[61px] text-3xl text-center ">تسجيل الدخول</h1>
+                        <h1 class="mb-[61px] text-[22px] md:text-[34px] text-center font-bold">تسجيل الدخول</h1>
                     </div>
-        			<div class="space-y-6 w-[503px]">
+        			<div class="mx-5">
         				<div class="">
-        					<input class=" w-full text-sm  px-4 py-3 bg-gray-200 focus:bg-gray-100 border  border-gray-200 rounded-[15px] focus:outline-none focus:border-purple-400 block text-end	h-16" type="" placeholder="البريد الالكتروني">
+        					<input class="w-full h-[45px] md:w-[500px] md:h-[60px] mb-8 text-sm md:text-base px-4 py-3 bg-gray-200 focus:bg-gray-100 border  border-gray-200 rounded-[15px] focus:outline-none focus:border-purple-400 block text-end" type="" placeholder="البريد الالكتروني">
                     </div>
         					<div class="relative" x-data="{ show: true }">
-        						<input placeholder="كلمة المرور" :type="show ? 'password' : 'text'" class="text-sm text-gray-200 px-4 py-3 rounded-[15px] w-full bg-gray-200 focus:bg-gray-100 border border-gray-200 focus:outline-none focus:border-purple-400 block text-end	h-16">
+        						<input placeholder="كلمة المرور" :type="show ? 'password' : 'text'" class="mb-5 w-full h-[45px] md:w-[500px] md:h-[60px] text-sm md:text-base text-gray-200 px-4 py-3 rounded-[15px] bg-gray-200 focus:bg-gray-100 border border-gray-200 focus:outline-none focus:border-purple-400 block text-end">
         						<div class="flex items-center absolute inset-y-0 right-0 mr-3  text-sm leading-5">
         							<svg @click="show = !show" :class="{'hidden': !show, 'block':show }"
         								class="h-4 text-purple-700" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -49,7 +49,7 @@
         
         
         
-                            <div class="flex items-start mb-[67px]">
+                            <div class="flex items-start">
         						<div class="flex items-start">
         							<div class="flex items-center h-5">
         								<input id="remember" aria-describedby="remember" type="checkbox" class="bg-gray-50 border border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800" required="">
@@ -62,12 +62,12 @@
         						</div>
         
         					<div class="">
-        						<button type="submit" class="mt-[67px] w-full text-white bg-cyan-500 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-bold  text-sm  pb-2 m-auto dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800 h-11 rounded-[15px]  min-w-28  text-center block text-center h-16 text-xl	">تسجيل الدخول</button>
+        						<button type="submit" class="mt-10 md:mt-[67px] text-white bg-cyan-500 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-bold  text-sm  pb-2 m-auto dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800 rounded-[15px]  min-w-28  text-center block text-center text-xl w-full h-[45px] md:w-[500px] md:h-[60px] t">تسجيل الدخول</button>
                     <div class="mb-7 text-center mt-11 text-sm	">
         				<p class="text-gray-400"> ليس لديك حساب؟<a href="#"
-        						class="text-sm text-purple-700 hover:text-purple-700"> إنشاء حساب</a></p>
+        						class="ext-sm text-purple-700 hover:text-purple-700"> إنشاء حساب</a></p>
         			</div>
-                    <div class="mt-7 text-center text-gray-300 text-xs mt-[52%]">
+                    <div class="mt-7 text-center text-gray-300 text-xs mt-[150%] sm:mt-[52%] md:mt-[17%] xl:mt-[52%]">
                         <span class="text-base">
                     جميع الحقوق محفوظة © 2024 | لموقع إلمام
                     </div>
@@ -76,9 +76,11 @@
             </div>
         </div>
 	</div>
+	<img src="imges/Group-login.svg" alt="" class="hidden sm:flex xl:hidden absolute top-0 left-[-10%] z-[-1] w-[814.802px] h-[894.175px]">
+	<img src="imges/Group-phone-2.svg" alt="" class="sm:hidden absolute top-0 left-0 z-[-1] w-[512px] h-[1115px]">
 </div>
 
-        <div>
+        <div class="hidden xl:block">
             <img src="imges/Group-sing-in-lg.svg" alt="" class="absolute
             ">
 
