@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>sing up</title>
+        <title>log-in</title>
     </head>
 	<script src="https://cdn.tailwindcss.com"></script>
     <script src="confing.js"></script>
@@ -19,15 +19,33 @@
         <div class="rounded-3xl w-fit ">
 			<div class="mt-[83px]">
 				<img src="imges/logo-2-log-in.svg" class="mb-6 md:mb-[76px] xl:mb[73px] m-auto w-24 h-[59px] md:w-[208px] md:h-[129px] xl:w-[144px] xl:h-[89px]" alt="" >
-				<h1 class="mb-[61px] text-[22px] md:text-[34px] text-center font-bold">انشاء حساب</h1>
+				<h1 class=" text-[22px] md:text-[34px] text-center font-bold">إنشاء حساب</h1>
 			</div>
-			<div class="mx-5">
+			<div class="mx-5 mt-4 md:mt-10 ">
+				<button aria-label="Continue with google" role="button" class="focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-gray-700 py-3.5 px-4 border rounded-2xl border-[#E6E6E6] flex   mt-10 w-full h-[45px] md:w-[500px] md:h-[60px] m-auto  h-16	justify-center text-center items-center gap-8 bg-white">
+					<svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M18.9892 10.1871C18.9892 9.36767 18.9246 8.76973 18.7847 8.14966H9.68848V11.848H15.0277C14.9201 12.767 14.3388 14.1512 13.047 15.0812L13.0289 15.205L15.905 17.4969L16.1042 17.5173C17.9342 15.7789 18.9892 13.221 18.9892 10.1871Z" fill="#4285F4" />
+						<path d="M9.68813 19.9314C12.3039 19.9314 14.4999 19.0455 16.1039 17.5174L13.0467 15.0813C12.2286 15.6682 11.1306 16.0779 9.68813 16.0779C7.12612 16.0779 4.95165 14.3395 4.17651 11.9366L4.06289 11.9465L1.07231 14.3273L1.0332 14.4391C2.62638 17.6946 5.89889 19.9314 9.68813 19.9314Z" fill="#34A853" />
+						<path d="M4.17667 11.9366C3.97215 11.3165 3.85378 10.6521 3.85378 9.96562C3.85378 9.27905 3.97215 8.6147 4.16591 7.99463L4.1605 7.86257L1.13246 5.44363L1.03339 5.49211C0.37677 6.84302 0 8.36005 0 9.96562C0 11.5712 0.37677 13.0881 1.03339 14.4391L4.17667 11.9366Z" fill="#FBBC05" />
+						<path d="M9.68807 3.85336C11.5073 3.85336 12.7344 4.66168 13.4342 5.33718L16.1684 2.59107C14.4892 0.985496 12.3039 0 9.68807 0C5.89885 0 2.62637 2.23672 1.0332 5.49214L4.16573 7.99466C4.95162 5.59183 7.12608 3.85336 9.68807 3.85336Z" fill="#EB4335" />
+					</svg>
+					<p class="text-base font-medium ml-4 text-gray-700" style="
+					box-shadow: 0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01);">التسجيل بواسطة قوقل</p>
+				</button>
+			</div>
+
+                    <div class=" flex items-center justify-center py-5  m-auto mt-10">
+                         <hr class="w-6 md:w-32 bg-gray-400 ">
+                         <p class="text-base font-medium leading-4 px-2.5 text-gray-400 w-max text-sm color-[#BCBCBC] mx-3" >او سجل عن طريق البريد الإلكتروني</p>
+                         <hr class="w-6  md:w-32 bg-gray-400  ">
+                        </div>
+			<div class="mx-5 md:mt-[67px] mt-8">
 				<div class="">
 					<input class="w-full h-[45px] md:w-[500px] md:h-[60px] mb-8 text-sm md:text-base px-4 py-3 bg-gray-200 focus:bg-gray-100 border  border-gray-200 rounded-[15px] focus:outline-none focus:border-purple-400 block text-start" type="" placeholder="البريد الالكتروني">
                     </div>
 					<div class="relative" x-data="{ show: true }">
-						<input placeholder="كلمة المرور" :type="show ? 'password' : 'text'" class="mb-5 w-full h-[45px] md:w-[500px] md:h-[60px] text-sm md:text-base text-gray-200 px-4 py-3 rounded-[15px] bg-gray-200 focus:bg-gray-100 border border-gray-200 focus:outline-none focus:border-purple-400 block text-start mb-8">
-						<div class="flex items-center absolute inset-y-0 left-0 ml-5 text-sm leading-5 ">
+						<input placeholder="كلمة المرور" :type="show ? 'password' : 'text'" class="mb-5 w-full h-[45px] md:w-[500px] md:h-[60px] text-sm md:text-base text-gray-200 px-4 py-3 rounded-[15px] bg-gray-200 focus:bg-gray-100 border border-gray-200 focus:outline-none focus:border-purple-400 block text-start">
+						<div class="flex items-center absolute inset-y-0 left-0 ml-5 text-sm leading-5">
 							<svg @click="show = !show" :class="{'hidden': !show, 'block':show }"
 							class="h-4 text-purple-700" fill="none" xmlns="http://www.w3.org/2000/svg"
 							viewbox="0 0 576 512">
@@ -44,8 +62,8 @@
 			</svg>
 		</div>
 	</div>
-    <div class="relative" x-data="{ show: true }">
-						<input placeholder="تاكيد كلمة المرور" :type="show ? 'password' : 'text'" class="mb-5 w-full h-[45px] md:w-[500px] md:h-[60px] text-sm md:text-base text-gray-200 px-4 py-3 rounded-[15px] bg-gray-200 focus:bg-gray-100 border border-gray-200 focus:outline-none focus:border-purple-400 block text-start">
+					<div class="relative" x-data="{ show: true }">
+						<input placeholder="تاكيد كلمة المرور " :type="show ? 'password' : 'text'" class="mb-5 w-full h-[45px] md:w-[500px] md:h-[60px] text-sm md:text-base text-gray-200 px-4 py-3 rounded-[15px] bg-gray-200 focus:bg-gray-100 border border-gray-200 focus:outline-none focus:border-purple-400 block text-start">
 						<div class="flex items-center absolute inset-y-0 left-0 ml-5 text-sm leading-5">
 							<svg @click="show = !show" :class="{'hidden': !show, 'block':show }"
 							class="h-4 text-purple-700" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -77,12 +95,14 @@
 								</div>
 							</div>
 							<div class="">
-								<button type="submit" class="mt-10 md:mt-[67px] text-white bg-cyan-500 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-bold  text-sm  pb-2 m-auto dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800 rounded-[15px]  min-w-28  text-center block text-center text-xl w-full h-[45px] md:w-[500px] md:h-[60px] t">انشاء حساب</button>
+								<button type="submit" class="mt-10 md:mt-[67px] text-white bg-cyan-500 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-bold  text-sm  pb-2 m-auto dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800 rounded-[15px]  min-w-28  text-center block text-center text-xl w-full h-[45px] md:w-[500px] md:h-[60px] "style="
+    box-shadow: 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.00), 0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01), 0px 30px 46.852px 0px rgba(0, 0, 0, 0.03);
+">إنشاء حساب</button>
 								<div class="mb-7 text-center mt-11 text-sm	">
 									<p class="text-gray-400">لديك حساب؟<a href="#"
 										class="ext-sm  hover:text-[#25A0D5] text-[#25A0D5] mr-2">تسجيل الدخول</a></p>
 									</div>
-										<div class="mt-7 text-center text-gray-300 text-xs mt-[145%] sm:mt-[70%] md:mt-[0%] xl:mt-56">
+										<div class="mt-7 text-center text-gray-300 text-xs mt-[120%] sm:mt-[40%] md:mt-[0%] xl:mt-28">
 											<span class="text-base">
                     جميع الحقوق محفوظة © 2024 | لموقع إلمام
                     </div>
