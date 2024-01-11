@@ -11,7 +11,7 @@
 <body style="
     font-family: Janna LT;">
  </head>
- <aside class="ml-[-100%] fixed z-10 top-0 pb-3 px-6 w-full flex flex-col justify-between h-screen border-l bg-white transition duration-300 md:w-4/12 lg:ml-0 lg:w-[25%] xl:w-[20%] 2xl:w-[15%]">
+ <aside class="ml-[-100%] fixed z-10 top-0 pb-3 px-6 w-full hidden lg:flex flex-col justify-between h-screen border-l bg-white transition duration-300 md:w-4/12 lg:ml-0 lg:w-[25%] xl:w-[20%] 2xl:w-[15%]">
     <div>
 
         <div class="mt-8 text-center">
@@ -103,41 +103,39 @@
     </a>
  </aside>
  <header>
-    <div class="mr-auto mb-6 lg:w-[75%] xl:w-[80%] 2xl:w-[85%]">
-        <div class="sticky z-10 top-0 h-16 border-b bg-white lg:py-2.5">
-            <div class="px-6 flex items-center justify-between space-x-4 2xl:container">
-                <button class="w-12 h-16 -mr-2 border-r lg:hidden">
+    <div class="h-[104px] mr-auto mb-6 lg:w-[75%] xl:w-[80%] 2xl:w-[85%]">
+        <div class="h-full sticky z-10 top-0 h-16 border-b bg-white lg:py-2.5">
+            <div class="my-[20px] h-[42px] px-6 flex items-center justify-between space-x-4 2xl:container">
+                <button class="w-12 h-16 -mr-2 lg:hidden">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 my-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                     </svg>
                 </button>
-                <div class="flex ">
-                    <!--search bar -->
-                    <button type="submit" class="w-10 h-10 rounded-xl border  focus:bg-gray-100 active:bg-gray-200 text-white flex w-[38px] h-[38px] p-1 justify-center items-center rounded-lg bg-[#25A0D5] mr-16 ml-3.5">
-                    <svg class="fill-current " xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve" width="512px" height="512px">
-                        <path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" />
-                    </svg>
-                    </button>
-                    <div hidden class="md:block">
-                        <div class="relative flex items-center text-gray-400 focus-within:text-cyan-400">
-                            <input type="search" name="leadingIcon" id="leadingIcon" placeholder="بحث" class="w-[706px] pl-14 pr-4 py-2.5  rounded-lg text-sm text-gray-600 outline-none border border-gray-300 focus:border-cyan-300 transition bg-neutral-100	">
+                <div class="flex justify-between w-full">
+                    <div class="flex">
+                        <!--search bar -->
+                        <button type="submit" class="focus:bg-gray-100 active:bg-gray-200 text-white hidden lg:flex w-[38px] h-[38px] justify-center items-center rounded-lg bg-[#25A0D5] ml-3.5">
+                        <svg class="fill-current w-[22px] h-[22px]" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve" width="512px" height="512px">
+                            <path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" />
+                        </svg>
+                        </button>
+                        <div class="hidden lg:block m-auto">
+                            <div class="relative flex items-center text-gray-400 focus-within:text-cyan-400">
+                                <input type="search" name="leadingIcon" id="leadingIcon" placeholder="بحث" class="w-[424px] xl:w-[716px] h-[30px] pl-14 pr-4 py-2.5  rounded-lg text-sm text-gray-600 outline-none border border-gray-300 focus:border-cyan-300 transition bg-neutral-100	">
+                            </div>
                         </div>
+                        <!--/search bar -->
+                        <button aria-label="notification" class="mr-6">
+                            <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.9567 19H8.45669C8.3473 18.9993 8.24 18.97 8.14551 18.9149C8.05102 18.8597 7.97265 18.7808 7.91824 18.6859C7.86383 18.591 7.83528 18.4835 7.83545 18.3741C7.83562 18.2647 7.86449 18.1572 7.91919 18.0625C8.43403 17.1719 9.08169 14.9227 9.08169 12.125C9.08169 10.6332 9.67432 9.20242 10.7292 8.14752C11.7841 7.09263 13.2148 6.5 14.7067 6.5C16.1985 6.5 17.6293 7.09263 18.6842 8.14752C19.7391 9.20242 20.3317 10.6332 20.3317 12.125C20.3317 14.9234 20.9801 17.1719 21.4958 18.0625C21.5505 18.1574 21.5794 18.2649 21.5795 18.3745C21.5796 18.484 21.5509 18.5916 21.4963 18.6865C21.4417 18.7815 21.3631 18.8604 21.2684 18.9154C21.1737 18.9705 21.0662 18.9996 20.9567 19Z" fill="#25A0D5"/>
+                            <path d="M22.0347 17.7453C21.6011 16.9984 20.9566 14.8852 20.9566 12.125C20.9566 10.4674 20.2981 8.87769 19.126 7.70558C17.9539 6.53348 16.3642 5.875 14.7066 5.875C13.049 5.875 11.4593 6.53348 10.2872 7.70558C9.11509 8.87769 8.45661 10.4674 8.45661 12.125C8.45661 14.8859 7.8113 16.9984 7.37771 17.7453C7.26698 17.9352 7.20828 18.1509 7.20753 18.3707C7.20677 18.5905 7.26399 18.8066 7.37341 18.9973C7.48283 19.1879 7.64058 19.3463 7.83076 19.4565C8.02094 19.5667 8.23681 19.6248 8.45661 19.625H11.6449C11.7891 20.3306 12.1726 20.9647 12.7305 21.4201C13.2884 21.8756 13.9864 22.1243 14.7066 22.1243C15.4268 22.1243 16.1249 21.8756 16.6828 21.4201C17.2407 20.9647 17.6241 20.3306 17.7683 19.625H20.9566C21.1764 19.6247 21.3921 19.5665 21.5822 19.4562C21.7723 19.346 21.9299 19.1875 22.0392 18.9969C22.1486 18.8063 22.2057 18.5903 22.2049 18.3705C22.2041 18.1508 22.1454 17.9351 22.0347 17.7453ZM14.7066 20.875C14.319 20.8749 13.9409 20.7546 13.6244 20.5308C13.308 20.3069 13.0686 19.9905 12.9394 19.625H16.4738C16.3446 19.9905 16.1053 20.3069 15.7888 20.5308C15.4723 20.7546 15.0943 20.8749 14.7066 20.875ZM8.45661 18.375C9.05818 17.3406 9.70661 14.9438 9.70661 12.125C9.70661 10.7989 10.2334 9.52715 11.1711 8.58947C12.1088 7.65178 13.3805 7.125 14.7066 7.125C16.0327 7.125 17.3045 7.65178 18.2421 8.58947C19.1798 9.52715 19.7066 10.7989 19.7066 12.125C19.7066 14.9414 20.3535 17.3383 20.9566 18.375H8.45661Z" fill="#1F213D"/>
+                            </svg>
+                        </button>
                     </div>
-                    <!--/search bar -->
-                    <button aria-label="search" class="w-10 h-10 rounded-xl border bg-gray-100 focus:bg-gray-100 active:bg-gray-200 md:hidden">
-                        <svg xmlns="http://ww50w3.org/2000/svg" class="w-4 mx-auto fill-current text-gray-600" viewBox="0 0 35.997 36.004">
-                            <path id="Icon_awesome-search" data-name="search" d="M35.508,31.127l-7.01-7.01a1.686,1.686,0,0,0-1.2-.492H26.156a14.618,14.618,0,1,0-2.531,2.531V27.3a1.686,1.686,0,0,0,.492,1.2l7.01,7.01a1.681,1.681,0,0,0,2.384,0l1.99-1.99a1.7,1.7,0,0,0,.007-2.391Zm-20.883-7.5a9,9,0,1,1,9-9A8.995,8.995,0,0,1,14.625,23.625Z"></path>
-                        </svg>
-                    </button>
-                    <button aria-label="notification" class="mr-6">
-                        <svg xmlns="imges/Frame 1000004255.svg" class="h-5 w-5 m-auto text-gray-600" viewBox="0 0 20 20" fill="currentColor">
-                            <path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z" />
-                        </svg>
-                    </button>
-                    <div class="flex text-sm">
-                    <div class="flex text-sm  lg:w-[75%] xl:w-[80%] 2xl:w-[85%]">
+                    <div class="hidden lg:flex text-sm">
+                    <div class="flex text-sm w-full leading-5 font-bold m-auto">
                         <h1 class="text-[#25A0D5]">لوحة التحكم</h1>
-                        <h1 class=" mx-2 text-[#E9E9EC] mt-1" style="font-family: Inter;">/</h1>
+                        <h1 class=" mx-2 text-[#E9E9EC] mt-1">/</h1>
                         <h1 class="text-[#989797]">موقع إلمام</h1>
                     </div>
                 </div>
