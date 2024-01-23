@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Subscriptions</title>
       <script src="https://cdn.tailwindcss.com"></script>
       <script src="confing.js"></script>
       <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css"  rel="stylesheet" />
@@ -321,9 +321,29 @@
     </nav>
 </header>
 <main class=" w-full mt-[81px]  lg:mt-[104px] lg:mr-[25%] xl:mr-[20%] 2xl:mr-[15%] mb-6 lg:w-[75%] xl:w-[80%] 2xl:w-[85%] ">
-    <section class="mt-5 md:md-48 xl:mt-32">
+    <section>
+        <div class="mt-[101px] md:mt-[131px] xl:mt-[155px] mb-5 md:mb-8  mr-12">
+        <h2 class=" text-base xl:text-xl md:text-xl font-bold leading-tighter tracking-tighter aos-init aos-animate text-cyan-500">الإشتراكات</h2>
+    </div>
+        <div class="flex justify-right">
+            <div class=" mx-6  md:mr-12 rounded-2xl	bg-[#7FCAEA]  w-[433px] h-[126px] min-w-52 pt-3 pr-5 pb-2.5	pl-5 flex-col flex justify-center gap-1.5">
+                <h4 class="text-white text-xs md:text-sm	">تاريخ إنتهاء الاشتراك</h4>
+                <h1 class="text-white text-xs md:text-2xl	font-semibold	"style="font-family: Inter;">01/01/2025</h1>
+                <div class="w-full flex justify-end">
+                    <button class="rounded-lg	bg-white flex w-[110px] h-10	gap-1.5 text-[#D1D1D1] text-xs md:text-sm	justify-center	items-center		">
+                        تجديد الاشتراك
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-around max-w-[871px]  xl:mr-12 text-sm	md:text-xl w-[90.333333%] h-10 md:h-[52px] rounded-lg md:rounded-2xl bg-[#25A0D5]  mt-8  mx-auto	 ">
+            <div class="items-center w-[30%] h-[32px] md:h-10 m-auto rounded-md	md:rounded-xl flex justify-center bg-white text-cyan-500"><h4>المنشأة</h4></div>
+            <div class="items-center w-[30%] h-[32px] md:h-10 m-auto rounded-xl flex justify-center text-white bg-[#25A0D5]"><h4>الفروع</h4></div>
+            <div class="items-center w-[30%] h-[32px] md:h-10 m-auto rounded-xl flex justify-center text-white bg-[#25A0D5]"><h4>الفواتير</h4></div>
+        </div>
+    </section>
+        <section class="mt-5 md:md-48 xl:mt-8">
         <div class="mb-3 md:mb-7 xl:mb-10 mr-12">
-        <h2 class="mt-10	 sm:mt-36 text-base xl:text-xl md:text-xl font-bold leading-tighter tracking-tighter mb-3 sm:mb-10 aos-init aos-animate text-cyan-500">لوحة التحكم</h2>
         <h3 class=" text-base xl:text-xl font-bold">بيانات المنشأة</h3>
     </div>
     <div class="hidden md:flex md:justify-center inline-grid ">
@@ -427,57 +447,6 @@
         </ul>
         </div>
     </div>
-    </section>
-    <section>
-        <div class="mb-3 md:mb-7 xl:mb-10 mr-12">
-        <h2 class="my-10 text-base xl:text-xl md:text-xl font-bold leading-tighter tracking-tighter aos-init aos-animate text-cyan-500">الإحصائيات</h2>
-    </div>
-        <div class="flex justify-center	">
-            <div class="mr-12 rounded-2xl	bg-[#25A0D5]  w-[433px] h-[126px] min-w-52 pt-3 pr-5 pb-2.5	pl-5 flex-col flex justify-center gap-1.5">
-                <h4 class="text-white text-xs md:text-sm	">التقارير المنشأة</h4>
-                <h1 class="text-white text-xs md:text-2xl	font-semibold	"style="font-family: Inter;">5</h1>
-                <div class="w-full flex justify-end	">
-                    <button class="rounded-lg	bg-white flex w-[110px] h-10	gap-1.5 text-cyan-500 text-xs md:text-sm justify-center items-center"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                        <g clip-path="url(#clip0_1150_13606)">
-                            <path d="M9 0.5C7.31886 0.5 5.67547 0.998516 4.27766 1.93251C2.87984 2.8665 1.79037 4.19402 1.14703 5.74719C0.503683 7.30036 0.335355 9.00943 0.663329 10.6583C0.991303 12.3071 1.80085 13.8217 2.9896 15.0104C4.17834 16.1992 5.6929 17.0087 7.34174 17.3367C8.99057 17.6646 10.6996 17.4963 12.2528 16.853C13.806 16.2096 15.1335 15.1202 16.0675 13.7223C17.0015 12.3245 17.5 10.6811 17.5 9C17.4976 6.74641 16.6013 4.58582 15.0077 2.99228C13.4142 1.39875 11.2536 0.502437 9 0.5ZM11.8333 9.70833H9.70834V11.8333C9.70834 12.0212 9.63371 12.2014 9.50087 12.3342C9.36803 12.467 9.18787 12.5417 9 12.5417C8.81214 12.5417 8.63198 12.467 8.49914 12.3342C8.3663 12.2014 8.29167 12.0212 8.29167 11.8333V9.70833H6.16667C5.97881 9.70833 5.79864 9.63371 5.6658 9.50087C5.53296 9.36803 5.45834 9.18786 5.45834 9C5.45834 8.81214 5.53296 8.63197 5.6658 8.49913C5.79864 8.36629 5.97881 8.29167 6.16667 8.29167H8.29167V6.16667C8.29167 5.97881 8.3663 5.79864 8.49914 5.6658C8.63198 5.53296 8.81214 5.45833 9 5.45833C9.18787 5.45833 9.36803 5.53296 9.50087 5.6658C9.63371 5.79864 9.70834 5.97881 9.70834 6.16667V8.29167H11.8333C12.0212 8.29167 12.2014 8.36629 12.3342 8.49913C12.467 8.63197 12.5417 8.81214 12.5417 9C12.5417 9.18786 12.467 9.36803 12.3342 9.50087C12.2014 9.63371 12.0212 9.70833 11.8333 9.70833Z" fill="#25A0D5"/>
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_1150_13606">
-                                <rect width="17" height="17" fill="white" transform="translate(0.5 0.5)"/>
-                            </clipPath>
-                        </defs>
-                    </svg>إنشاء تقرير</button>
-                </div>
-            </div>
-            <div class="mr-12 rounded-2xl	bg-[#0973A1]  w-[433px] h-[126px] min-w-52 pt-3 pr-5 pb-2.5	pl-5 flex-col flex justify-center gap-1.5">
-                <h4 class="text-white text-xs md:text-sm">الفروع</h4>
-                <h1 class="text-white text-xs md:text-2xl	font-semibold"style="font-family: Inter;">12</h1>
-                <div class="w-full flex justify-end">
-
-                    <button class="rounded-lg	bg-white flex w-[110px] h-10	gap-1.5 text-cyan-500 text-xs md:text-sm	justify-center	items-center		"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
-                        <g clip-path="url(#clip0_1150_13594)">
-                            <path d="M8.5 0.5C6.81886 0.5 5.17547 0.998516 3.77766 1.93251C2.37984 2.8665 1.29037 4.19402 0.647028 5.74719C0.00368293 7.30036 -0.164645 9.00943 0.163329 10.6583C0.491303 12.3071 1.30085 13.8217 2.4896 15.0104C3.67834 16.1992 5.1929 17.0087 6.84174 17.3367C8.49057 17.6646 10.1996 17.4963 11.7528 16.853C13.306 16.2096 14.6335 15.1202 15.5675 13.7223C16.5015 12.3245 17 10.6811 17 9C16.9976 6.74641 16.1013 4.58582 14.5077 2.99228C12.9142 1.39875 10.7536 0.502437 8.5 0.5ZM11.3333 9.70833H9.20834V11.8333C9.20834 12.0212 9.13371 12.2014 9.00087 12.3342C8.86803 12.467 8.68787 12.5417 8.5 12.5417C8.31214 12.5417 8.13198 12.467 7.99914 12.3342C7.8663 12.2014 7.79167 12.0212 7.79167 11.8333V9.70833H5.66667C5.47881 9.70833 5.29864 9.63371 5.1658 9.50087C5.03296 9.36803 4.95834 9.18786 4.95834 9C4.95834 8.81214 5.03296 8.63197 5.1658 8.49913C5.29864 8.36629 5.47881 8.29167 5.66667 8.29167H7.79167V6.16667C7.79167 5.97881 7.8663 5.79864 7.99914 5.6658C8.13198 5.53296 8.31214 5.45833 8.5 5.45833C8.68787 5.45833 8.86803 5.53296 9.00087 5.6658C9.13371 5.79864 9.20834 5.97881 9.20834 6.16667V8.29167H11.3333C11.5212 8.29167 11.7014 8.36629 11.8342 8.49913C11.967 8.63197 12.0417 8.81214 12.0417 9C12.0417 9.18786 11.967 9.36803 11.8342 9.50087C11.7014 9.63371 11.5212 9.70833 11.3333 9.70833Z" fill="#0973A1"/>
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_1150_13594">
-                                <rect width="17" height="17" fill="white" transform="translate(0 0.5)"/>
-                            </clipPath>
-                        </defs>
-                    </svg>
-                    إضافة فرع
-                </button>
-            </div>
-            </div>
-            <div class="ml-8 mr-12 rounded-2xl	bg-[#7FCAEA]  w-[433px] h-[126px] min-w-52 pt-3 pr-5 pb-2.5	pl-5 flex-col flex justify-center gap-1.5">
-                <h4 class="text-white text-xs md:text-sm	">تاريخ إنتهاء الاشتراك</h4>
-                <h1 class="text-white text-xs md:text-2xl	font-semibold	"style="font-family: Inter;">01/01/2025</h1>
-                <div class="w-full flex justify-end">
-                    <button class="rounded-lg	bg-white flex w-[110px] h-10	gap-1.5 text-[#D1D1D1] text-xs md:text-sm	justify-center	items-center		">
-                        تجديد الاشتراك
-                    </button>
-                </div>
-            </div>
-        </div>
     </section>
 </main>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
