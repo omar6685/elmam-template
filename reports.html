@@ -321,27 +321,75 @@
     </nav>
 </header>
 <main class="w-full mt-[81px]  lg:mt-[104px] lg:mr-[25%] xl:mr-[20%] 2xl:mr-[15%] mb-6 lg:w-[75%] xl:w-[80%] 2xl:w-[85%]">
-    <h2>التقارير</h2>
-    <div></div>
-    
-<table style="width:100%">
-    <tr>
-      <th>Company</th>
-      <th>Contact</th>
-      <th>Country</th>
-    </tr>
-    <tr>
-      <td>Alfreds Futterkiste</td>
-      <td>Maria Anders</td>
-      <td>Germany</td>
-    </tr>
-    <tr>
-      <td>Centro comercial Moctezuma</td>
-      <td>Francisco Chang</td>
-      <td>Mexico</td>
-    </tr>
-  </table>
-  
+    <div class="flex justify-between items-center mx-[2.5%] mt-[124px] lg:mt-[154px] ">
+        <h2 class="text-base md:text-xl font-bold text-[#25A0D5]">التقارير</h2>
+        <div class="items-center ml-0 text-white bg-[#25A0D5] rounded-lg text-sm md:text-base w-[102px] md:w-[121px] p-1  m-2 h-8 rounded-[10px] flex justify-center font-bold">تقرير جديد</div>
+    </div>
+    <div class="my-[20px] h-[42px] px-[2.5%] flex items-center justify-between space-x-4 2xl:container">
+        <div class="flex justify-between w-full">
+            <div class="flex w-full">
+                <!--search bar -->
+                <button type="submit" class="focus:bg-gray-100 active:bg-gray-200 text-white flex w-[38px] h-[38px] justify-center items-center rounded-lg bg-[#25A0D5] ml-3.5">
+                <svg class="fill-current w-[22px] h-[22px]" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve" width="512px" height="512px">
+                    <path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" />
+                </svg>
+                </button>
+                <div class="flex items-center">
+                    <div class="relative flex items-center text-gray-400 focus-within:text-cyan-400">
+                        <input type="search" name="leadingIcon" id="leadingIcon" placeholder="بحث" class="w-[100%] md:w-[280px] xl:w-[450px] h-[30px] pl-14 pr-4 py-2.5  rounded-lg text-sm text-gray-600 outline-none border border-gray-300 focus:border-cyan-300 transition bg-neutral-100	">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <table class="text-[10px] md:text-sm xl:text-base mt-[45px] m-auto w-[95%]">
+        <thead>
+          <tr class="flex bg-[#D4F0FB] justify-around rounded-xl h-11 mb-5 items-center gap-[11px] text-justfiy px-[10px]">
+            <th>رقم التقرير</th>
+            <th>المنشأة</th>
+            <th>السجل التجاري</th>
+            <th>نوع التقرير</th>
+            <th>تاريخ الإنشاء</th>
+            <th>تحميل</th>
+          </tr>
+        </thead>
+        <tbody>    
+            <tr class="flex justify-around bg-[#F5F5F5] items-center h-10 mb-5 gap-[11px] text-justfiy rounded-xl px-[10px]">
+                <td class="max-w-[100px]">#435463</td>
+                <td class="max-w-[100px]">شركة كذا</td>
+                <td>12345678901</td>
+                <td>نطاقات</td>
+                <td>%Y-%m-%d</td>
+                <td><a href="#" class="text-[#25A0D5]">عرض</a> / <a href="#" class="text-[#25A0D5]">تحميل</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <div>
+        <nav aria-label="Page navigation example" class="mr-[2.5%]">
+            <ul class="inline-flex -space-x-px text-base h-10 rounded-full items-center text-base bg-[#F7F7F7] border border-[#BAB9B9] p-2 gap-2">
+              <li>
+                <a href="#" class="flex items-center justify-center py-[5px] px-2 leading-tight text-gray-500 rounded-full hover:bg-[#25A0D5] border border-[#BAB9B9] hover:border-0 hover:text-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="14" viewBox="0 0 9 14" fill="none">
+                        <path d="M1.22363 1.14204L6.60381 5.96347C7.2392 6.53288 7.2392 7.46463 6.60381 8.03403L1.22363 12.8555" stroke="#BAB9B9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="flex items-center justify-center leading-tight text-gray-500 rounded-full py-1 px-2 hover:bg-[#25A0D5] hover:text-white dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">1</a>
+              </li>
+              <li>
+                <a href="#" class="flex items-center justify-center leading-tight text-gray-500 rounded-full py-1 px-2 hover:bg-[#25A0D5] hover:text-white dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">2</a>
+              </li>
+              <li>
+                <a href="#" class="flex items-center justify-center py-[5px] px-2 leading-tight text-gray-500 rounded-full hover:bg-[#25A0D5] border border-[#BAB9B9] hover:border-0 hover:text-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="14" viewBox="0 0 9 14" fill="none">
+                        <path d="M7.42676 12.856L2.04658 8.03457C1.41119 7.46517 1.41119 6.53342 2.04658 5.96402L7.42676 1.14258"  stroke="#BAB9B9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+              </li>
+            </ul>
+        </nav>
+    </div>
 </main>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
 </body>
