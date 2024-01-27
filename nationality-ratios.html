@@ -360,28 +360,60 @@
     </section>
     <section>
         <!---->
-        <table class="text-[10px] md:text-sm xl:text-base mt-5 m-auto w-[95%]">
+        <table class="text-[9px] leading-[10px] md:text-sm xl:text-base mt-5 m-auto w-[95%]">
             <thead>
                 <tr class="flex bg-[#D4F0FB] justify-around rounded-xl h-11 mb-5 items-center gap-[11px] text-justfiy px-[10px]">
-            <th>الجنسيات في الكيان</th>
-            <th>عدد العمالة لكل جنسية</th>
-            <th>نسبة العمال في الكيان</th>
-            <th>الحد الأعلى من النسب المسموحة</th>
-            <th>العدد الذي يمكن إضافته دون</th>
-            <th>العدد المطلوب إضافته</th>
-        </tr>
-    </thead>
-        <tbody>
-            <tr class="flex justify-around bg-[#F5F5F5] items-center h-10 mb-5 gap-[11px] text-justfiy rounded-xl px-[10px]">
-                <td class="max-w-[100px]">باكستاني</td>
-                <td class="max-w-[100px]">15</td>
-                <td>50%</td>
-                <td>40</td>
-                <td class=" w-[62px] h-8 rounded-xl	border border-[#D7D7D7] text-center	font-[Inter] text-sm max-w-[100px]">10</td>
-                <td><input class=" w-[62px] h-8 rounded-xl	border border-[#D7D7D7] text-center	font-[Inter] text-sm bg-grey max-w-[100px]" type="text"></td>
-            </tr>
-        </tbody>
-    </table>
+                    <th>الجنسيات في الكيان</th>
+                    <th>عدد العمالة لكل جنسية</th>
+                    <th>نسبة العمال في الكيان</th>
+                    <th>الحد الأعلى من النسب المسموحة</th>
+                    <th class="flex items-center sm:gap-1 md:gap-1.5 text-[8px] md:text-sm xl:text-base">العدد الذي يمكن إضافته دون<svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                        <g clip-path="url(#clip0_2223_17338)">
+                            <path d="M7 0C5.61553 0 4.26216 0.410543 3.11101 1.17971C1.95987 1.94888 1.06266 3.04213 0.532846 4.32122C0.003033 5.6003 -0.13559 7.00777 0.134506 8.36563C0.404603 9.7235 1.07129 10.9708 2.05026 11.9497C3.02922 12.9287 4.2765 13.5954 5.63437 13.8655C6.99224 14.1356 8.3997 13.997 9.67879 13.4672C10.9579 12.9373 12.0511 12.0401 12.8203 10.889C13.5895 9.73785 14 8.38447 14 7C13.998 5.1441 13.2599 3.36479 11.9475 2.05247C10.6352 0.74015 8.8559 0.0020073 7 0ZM7 12.8333C5.84628 12.8333 4.71846 12.4912 3.75918 11.8502C2.79989 11.2093 2.05222 10.2982 1.61071 9.23232C1.16919 8.16642 1.05368 6.99353 1.27876 5.86197C1.50384 4.73042 2.05941 3.69102 2.87521 2.87521C3.69102 2.0594 4.73042 1.50383 5.86198 1.27875C6.99353 1.05367 8.16642 1.16919 9.23232 1.6107C10.2982 2.05221 11.2093 2.79989 11.8502 3.75917C12.4912 4.71846 12.8333 5.84628 12.8333 7C12.8316 8.54658 12.2165 10.0293 11.1229 11.1229C10.0293 12.2165 8.54658 12.8316 7 12.8333Z" fill="#A7A7A7"/>
+                            <path d="M6.99935 2.91797C6.84464 2.91797 6.69627 2.97943 6.58687 3.08882C6.47747 3.19822 6.41602 3.34659 6.41602 3.5013V8.16797C6.41602 8.32268 6.47747 8.47105 6.58687 8.58045C6.69627 8.68984 6.84464 8.7513 6.99935 8.7513C7.15406 8.7513 7.30243 8.68984 7.41183 8.58045C7.52122 8.47105 7.58268 8.32268 7.58268 8.16797V3.5013C7.58268 3.34659 7.52122 3.19822 7.41183 3.08882C7.30243 2.97943 7.15406 2.91797 6.99935 2.91797Z" fill="#A7A7A7"/>
+                            <path d="M7.58268 10.5013C7.58268 10.1791 7.32152 9.91797 6.99935 9.91797C6.67718 9.91797 6.41602 10.1791 6.41602 10.5013C6.41602 10.8235 6.67718 11.0846 6.99935 11.0846C7.32152 11.0846 7.58268 10.8235 7.58268 10.5013Z" fill="#A7A7A7"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_2223_17338">
+                                <rect width="14" height="14" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    </th>
+                    <th>العدد المطلوب إضافته</th>
+                    </tr>
+            </thead>
+            <tbody>
+                <tr class="flex justify-around bg-[#F5F5F5] items-center h-10 border-b border-b-[#D7D7D7] gap-[11px] text-justfiy rounded-t-2xl px-[10px]">
+                    <td class="w-[15%]">باكستاني</td>
+                    <td class="w-[15%]">15</td>
+                    <td class="w-[15%]">50%</td>
+                    <td class="w-[15%]">40</td>
+                    <td class="w-[15%] h-8 md:h-9 rounded-xl border border-[#D7D7D7] text-white text-center font-[Inter] text-sm md:text-lg  bg-[#06B217] flex justify-center items-center">10</td>
+                    <td class="w-[15%]"><input class="w-full h-8 md:h-9 rounded-xl border border-[#D7D7D7] text-center font-[Inter] text-sm md:text-lg" type="number" placeholder="000"></td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr class="flex justify-around bg-[#F5F5F5] items-center h-10 border-b border-b-[#D7D7D7] gap-[11px] text-justfiy px-[10px]">
+                    <td class="w-[15%]">باكستاني</td>
+                    <td class="w-[15%]">15</td>
+                    <td class="w-[15%]">50%</td>
+                    <td class="w-[15%]">40</td>
+                    <td class="w-[15%] h-8 md:h-9 rounded-xl border border-[#D7D7D7] text-white text-center font-[Inter] text-sm md:text-lg  bg-[#06B217] flex justify-center items-center">10</td>
+                    <td class="w-[15%]"><input class="w-full h-8 md:h-9 rounded-xl border border-[#D7D7D7] text-center font-[Inter] text-sm md:text-lg" type="number" placeholder="000"></td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr class="flex justify-around bg-[#F5F5F5] items-center h-10  gap-[11px] text-justfiy rounded-b-2xl px-[10px]">
+                    <td class="w-[15%]">باكستاني</td>
+                    <td class="w-[15%]">15</td>
+                    <td class="w-[15%]">50%</td>
+                    <td class="w-[15%]">40</td>
+                    <td class="w-[15%] h-8 md:h-9 rounded-xl border border-[#D7D7D7] text-white text-center font-[Inter] text-sm md:text-lg  bg-[#06B217] flex justify-center items-center">10</td>
+                    <td class="w-[15%]"><input class="w-full h-8 md:h-9 rounded-xl border border-[#D7D7D7] text-center font-[Inter] text-sm md:text-lg" type="number" placeholder="000"></td>
+                </tr>
+            </tbody>
+        </table>
     </section>
 </main>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
