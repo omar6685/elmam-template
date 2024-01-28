@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nitaqat report</title>
-      <script src="https://cdn.tailwindcss.com"></script>
-      <script src="confing.js"></script>
-      <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css"  rel="stylesheet" />
-      <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="confing.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css"  rel="stylesheet" />
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
 <body class="font-['Janna_LT']">
- </head>
  <aside class="ml-[-100%] fixed z-10 top-0  px-4 w-full hidden lg:flex flex-col justify-between h-screen border-l bg-white transition duration-300 md:w-4/12 lg:ml-0 lg:w-[25%] xl:w-[20%] 2xl:w-[15%]">
     <div>
 
@@ -126,7 +126,6 @@
 </svg>
     </a>
  </aside>
-
  <header class="fixed top-0 z-[99] w-full h-[104px] lg:mr-[25%] xl:mr-[20%] 2xl:mr-[15%] mb-6 lg:w-[75%] xl:w-[80%] 2xl:w-[85%]">
     <nav class="bg-white border-b border-gray-200 lg:p-0 dark:bg-gray-800 pt-5 lg:shadow-none shadow-md">
         <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl w-full">
@@ -336,7 +335,7 @@
         </div>
     </section>
     <section>
-        <div class="mt-5 mx-5 grid gap-5 grid-cols-1 sm:grid-cols-2 xl:grid-cols-4">
+        <div class="mt-5 mx-5 grid gap-5 grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
             <div class="">
                 <label class=""><span  class="font-['El_Messiri'] text-[#E80F0F] font-bold text-xl ">*</span>اسم الشركة</label>
                 <select class="mt-4 w-full h-[46px] text-sm md:text-base text-[#25A0D5] px-4 py-3 rounded-[10px] bg-white focus:bg-white border border-[#F5F5F5] focus:outline-none focus:border-cyan-300 block text-start" style="box-shadow: 0px 4px 20px 0px rgba(184, 184, 184, 0.15);">
@@ -451,21 +450,18 @@
                 <input class="mt-4 w-full h-[46px] text-sm md:text-base px-4 py-3 bg-neutral-100 focus:bg-gray-100 border  border-gray-200 rounded-[10px] focus:outline-none focus:border-purple-400 block text-start">
             </div>
             <div>
-                <label class=""><span  class="font-['El_Messiri'] text-[#E80F0F] font-bold text-xl ">*</span>هل كانت المنشأة بالنطاق الأحمر في اخر 4أسابيع متصلة او 8أسابيع</label>
+                <label class=""><span  class="font-['El_Messiri'] text-[#E80F0F] font-bold text-xl ">*</span>عدد الاسابيع الحمراء</label>
                 <input class="mt-4 w-full h-[46px] text-sm md:text-base px-4 py-3 bg-neutral-100 focus:bg-gray-100 border  border-gray-200 rounded-[10px] focus:outline-none focus:border-purple-400 block text-start">
             </div>
             <div>
-                <label class=""><span  class="font-['El_Messiri'] text-[#E80F0F] font-bold text-xl ">*</span>اسم الشركة</label>
+                <label class=""><span  class="font-['El_Messiri'] text-[#E80F0F] font-bold text-xl ">*</span>هل توجد شهادة موائمة للمنشأة</label>
                 <div class="flex gap-2 items-center mt-4">
                     <label for="">نعم</label>
                     <input type="radio" name="radio-group" class="rounded-full">
                     <label for="">لا</label>
                     <input type="radio" name="radio-group" class="rounded-full">
-
                 </div>
             </div>
-
-
         </div>
     </section>
 </main>
