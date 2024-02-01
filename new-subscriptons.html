@@ -345,12 +345,12 @@
             </div>
         </div>
         <div class="flex justify-around max-w-[871px]  xl:mr-12 text-sm	md:text-xl w-[90.333333%] h-10 md:h-[52px] rounded-lg md:rounded-2xl bg-[#25A0D5]  mt-8  mx-auto	 ">
-            <div class="items-center w-[30%] h-[32px] md:h-10 m-auto rounded-md	md:rounded-xl flex justify-center bg-white text-cyan-500"><h4>المنشأة</h4></div>
-            <div class="items-center w-[30%] h-[32px] md:h-10 m-auto rounded-xl flex justify-center text-white bg-[#25A0D5]"><h4>الفروع</h4></div>
-            <div class="items-center w-[30%] h-[32px] md:h-10 m-auto rounded-xl flex justify-center text-white bg-[#25A0D5]"><h4>الفواتير</h4></div>
+            <button class="items-center w-[30%] h-[32px] md:h-10 m-auto rounded-md	md:rounded-xl flex justify-center bg-white text-cyan-500" id="company-link"><h4>المنشأة</h4></button>
+            <button class="items-center w-[30%] h-[32px] md:h-10 m-auto rounded-xl flex justify-center text-white bg-[#25A0D5]" id="branch-link"><h4>الفروع</h4></button>
+            <button class="items-center w-[30%] h-[32px] md:h-10 m-auto rounded-xl flex justify-center text-white bg-[#25A0D5]" id="bill-link"><h4>الفواتير</h4></button>
         </div>
     </section>
-        <section class="mt-5 md:md-48 xl:mt-8">
+        <section class="mt-5 md:md-48 xl:mt-8" id="company">
         <div class="mb-3 md:mb-7 xl:mb-10 mr-12">
         <h3 class=" text-base xl:text-xl font-bold">بيانات المنشأة</h3>
     </div>
@@ -456,7 +456,171 @@
         </div>
     </div>
     </section>
+    <section class="mt-5 md:md-48 xl:mt-8" id="branch">
+        <div class="mb-3 md:mb-7 xl:mb-10 mr-12">
+            <h3 class=" text-base xl:text-xl font-bold">الفروع</h3>
+        </div>
+        <table class="text-[10px] md:text-sm xl:text-base mt-[45px] m-auto w-[95%]">
+            <thead>
+              <tr class="flex bg-[#D4F0FB] justify-around rounded-xl h-11 mb-5 items-center gap-[11px] text-justfiy px-[10px]">
+                <th>رقم التقرير</th>
+                <th>المنشأة</th>
+                <th>السجل التجاري</th>
+                <th>نوع التقرير</th>
+                <th>تاريخ الإنشاء</th>
+                <th>تحميل</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr class="flex justify-around bg-[#F5F5F5] items-center h-10 mb-5 gap-[11px] text-justfiy rounded-xl px-[10px] font-[Inter]">
+                    <td class="max-w-[100px]">#435463</td>
+                    <td class="max-w-[100px]">شركة كذا</td>
+                    <td>12345678901</td>
+                    <td>نطاقات</td>
+                    <td>%Y-%m-%d</td>
+                    <td><a href="#" class="text-[#25A0D5]">عرض</a> / <a href="#" class="text-[#25A0D5]">تحميل</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <div>
+            <nav aria-label="Page navigation example" class="mr-[2.5%]">
+                <ul class="inline-flex -space-x-px text-base h-10 rounded-full items-center text-base bg-[#F7F7F7] border border-[#BAB9B9] p-2 gap-2">
+                  <li>
+                    <a href="#" class="flex items-center justify-center py-[5px] px-2 leading-tight text-gray-500 rounded-full hover:bg-[#25A0D5] border border-[#BAB9B9] hover:border-0 hover:text-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="9" height="14" viewBox="0 0 9 14" fill="none">
+                            <path d="M1.22363 1.14204L6.60381 5.96347C7.2392 6.53288 7.2392 7.46463 6.60381 8.03403L1.22363 12.8555" stroke="#BAB9B9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="flex items-center justify-center leading-tight text-gray-500 rounded-full py-1 px-2 hover:bg-[#25A0D5] hover:text-white dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">1</a>
+                  </li>
+                  <li>
+                    <a href="#" class="flex items-center justify-center leading-tight text-gray-500 rounded-full py-1 px-2 hover:bg-[#25A0D5] hover:text-white dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">2</a>
+                  </li>
+                  <li>
+                    <a href="#" class="flex items-center justify-center py-[5px] px-2 leading-tight text-gray-500 rounded-full hover:bg-[#25A0D5] border border-[#BAB9B9] hover:border-0 hover:text-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="9" height="14" viewBox="0 0 9 14" fill="none">
+                            <path d="M7.42676 12.856L2.04658 8.03457C1.41119 7.46517 1.41119 6.53342 2.04658 5.96402L7.42676 1.14258"  stroke="#BAB9B9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                  </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <section class="mt-5 md:md-48 xl:mt-8" id="bill">
+        <div class="mb-3 md:mb-7 xl:mb-10 mr-12">
+            <h3 class=" text-base xl:text-xl font-bold">الفواتير</h3>
+        </div>
+        
+        <table class="text-[10px] md:text-sm xl:text-base mt-[45px] m-auto w-[95%]">
+            <thead>
+              <tr class="flex bg-[#D4F0FB] justify-around rounded-xl h-11 mb-5 items-center gap-[11px] text-justfiy px-[10px]">
+                <th>رقم الفاتورة</th>
+                <th>المنشأة</th>
+                <th>تاريخ الاشتراك</th>
+                <th>تحميل</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr class="flex justify-around bg-[#F5F5F5] items-center h-10 mb-5 gap-[11px] text-justfiy rounded-xl px-[10px] font-[Inter]">
+                    <td class="max-w-[100px]">#435463</td>
+                    <td class="max-w-[100px]">شركة كذا</td>
+                    <td>%Y-%m-%d</td>
+                    <td><a href="#" class="text-[#25A0D5]">تحميل</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <div>
+            <nav aria-label="Page navigation example" class="mr-[2.5%]">
+                <ul class="inline-flex -space-x-px text-base h-10 rounded-full items-center text-base bg-[#F7F7F7] border border-[#BAB9B9] p-2 gap-2">
+                  <li>
+                    <a href="#" class="flex items-center justify-center py-[5px] px-2 leading-tight text-gray-500 rounded-full hover:bg-[#25A0D5] border border-[#BAB9B9] hover:border-0 hover:text-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="9" height="14" viewBox="0 0 9 14" fill="none">
+                            <path d="M1.22363 1.14204L6.60381 5.96347C7.2392 6.53288 7.2392 7.46463 6.60381 8.03403L1.22363 12.8555" stroke="#BAB9B9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="flex items-center justify-center leading-tight text-gray-500 rounded-full py-1 px-2 hover:bg-[#25A0D5] hover:text-white dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">1</a>
+                  </li>
+                  <li>
+                    <a href="#" class="flex items-center justify-center leading-tight text-gray-500 rounded-full py-1 px-2 hover:bg-[#25A0D5] hover:text-white dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">2</a>
+                  </li>
+                  <li>
+                    <a href="#" class="flex items-center justify-center py-[5px] px-2 leading-tight text-gray-500 rounded-full hover:bg-[#25A0D5] border border-[#BAB9B9] hover:border-0 hover:text-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="9" height="14" viewBox="0 0 9 14" fill="none">
+                            <path d="M7.42676 12.856L2.04658 8.03457C1.41119 7.46517 1.41119 6.53342 2.04658 5.96402L7.42676 1.14258"  stroke="#BAB9B9" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                  </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
 </main>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+    
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    
+        // get the links and divs
+        const companyLink = document.getElementById('company-link');
+        const branchLink = document.getElementById('branch-link');
+        const billLink = document.getElementById('bill-link');
+        const company = document.getElementById('company');
+        const branch = document.getElementById('branch');
+        const bill = document.getElementById('bill');
+    
+        // function to reset background colors
+        function resetBackgroundColors() {
+            companyLink.style.backgroundColor = '#25A0D5';
+            companyLink.style.color = 'white';
+            branchLink.style.backgroundColor = '#25A0D5';
+            branchLink.style.color = 'white';
+            billLink.style.backgroundColor = '#25A0D5';
+            billLink.style.color = 'white';
+    
+        }
+    
+        // show "المنشأة" section by default
+        company.style.display = 'block';
+        branch.style.display = 'none';
+        bill.style.display = 'none';
+    
+        // add click event listeners to the links
+        companyLink.addEventListener('click', function (event) {
+            event.preventDefault(); // prevent default link behavior
+            resetBackgroundColors();
+            companyLink.style.backgroundColor = 'white';
+            companyLink.style.color = '#25A0D5';
+            company.style.display = 'block';
+            branch.style.display = 'none';
+            bill.style.display = 'none';
+        });
+    
+        branchLink.addEventListener('click', function (event) {
+            event.preventDefault(); // prevent default link behavior
+            resetBackgroundColors();
+            branchLink.style.backgroundColor = 'white';
+            branchLink.style.color = '#25A0D5';
+            company.style.display = 'none';
+            branch.style.display = 'block';
+            bill.style.display = 'none';
+        });
+    
+        billLink.addEventListener('click', function (event) {
+            event.preventDefault(); // prevent default link behavior
+            resetBackgroundColors();
+            billLink.style.backgroundColor = 'white';
+            billLink.style.color = '#25A0D5';
+            company.style.display = 'none';
+            branch.style.display = 'none';
+            bill.style.display = 'block';
+        });
+    });
+    
+</script>    
 </body>
 </html>
