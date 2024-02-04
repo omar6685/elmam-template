@@ -10,7 +10,7 @@
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     </head>
 <body class="font-['Janna_LT']">
-<aside class="ml-[-100%] fixed z-10 top-0  px-4 w-full hidden lg:flex flex-col justify-between h-screen border-l bg-white transition duration-300 md:w-4/12 lg:ml-0 lg:w-[25%] xl:w-[20%] 2xl:w-[15%]">
+<aside class=" print:hiddenml-[-100%] fixed z-10 top-0  px-4 w-full hidden lg:flex flex-col justify-between h-screen border-l bg-white transition duration-300 md:w-4/12 lg:ml-0 lg:w-[25%] xl:w-[20%] 2xl:w-[15%]">
     <div>
         <div class="flex mt-8 text-center">
             <img src="imges/Ellipse 76.svg" alt="" class="ml-2">
@@ -123,7 +123,7 @@
 </svg>
     </a>
 </aside>
-<header class="fixed top-0 z-[99] w-full h-[104px] lg:mr-[25%] xl:mr-[20%] 2xl:mr-[15%] mb-6 lg:w-[75%] xl:w-[80%] 2xl:w-[85%]">
+<header class="print:hidden fixed top-0 z-[99] w-full h-[104px] lg:mr-[25%] xl:mr-[20%] 2xl:mr-[15%] mb-6 lg:w-[75%] xl:w-[80%] 2xl:w-[85%]">
     <nav class="bg-white border-b border-gray-200 lg:p-0 dark:bg-gray-800 pt-5 lg:shadow-none shadow-md">
         <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl w-full">
             <div class="flex justify-between w-full pb-5">
@@ -315,13 +315,13 @@
         </div>
     </nav>
 </header>
-<main class=" w-full mt-[81px]  lg:mt-[104px] lg:mr-[25%] xl:mr-[20%] 2xl:mr-[15%] mb-6 lg:w-[75%] xl:w-[80%] 2xl:w-[85%] ">
+<main class="w-full mt-[81px]  lg:mt-[104px] lg:mr-[25%] xl:mr-[20%] 2xl:mr-[15%] mb-6 lg:w-[75%] xl:w-[80%] 2xl:w-[85%] ">
         <!-- بداية الشريط-->
-            <div class="flex mt-[101px] md:mt-[151px] xl:mt-40 mr-[2.5%] ">
+            <div class="print:hidden flex mt-[101px] md:mt-[151px] xl:mt-40 mr-[2.5%] ">
                 <h4 class="text-[#BDBDBD] text-xs md:text-base xl:text-xl underline"> الاشتراكات <h4 class="text-[#BDBDBD] text-xs md:text-base xl:text-xl underline">>الفواتير </h4> <h2 class="text-[#25A0D5] text-xs md:text-base xl:text-xl underline "> > </h2> <h4 class="text-[#25A0D5] text-xs md:text-base xl:text-xl underline ">فاتورة رقم  <span>#34567</span></h4></h4>
             </div>
         <!-- نهاية الشريط-->
-<section class="relative mt-7 print:w-[794px] h-[1123px] border border-[2px] border-[#25A0D5] rounded-xl mr-[2.5%]">
+<section class="relative mt-7 print:mt-[0px] print:w-[794px] h-[1123px] border border-[2px] border-[#25A0D5] rounded-xl print:mx-0 ml-[2.5%] mr-[2.5%]">
         <!-- header start -->
             <div class="flex justify-between mt-5 px-4  border-b border-[#25A0D5] border-b-[4px]">
                 <svg class="mb-4" width="44" height="27" viewBox="0 0 44 27" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -521,8 +521,8 @@
         </footer>
 </section>
 <!-- بداية الازرار -->
-<div class="py-[50px] px-[50px] flex justify-center gap-3">
-<button class="group rounded-lg	 relative w-[150px] h-[40px] flex items-center border border-cyan-500 bg-[#25A0D5] overflow-hidden hover:bg-cyan-100" style="transition: all 0.3s;" type="button">
+<div class="print:hidden py-[50px] px-[50px] flex justify-center gap-3">
+<button onclick="window.print();" class="group rounded-lg	 relative w-[150px] h-[40px] flex items-center border border-cyan-500 bg-[#25A0D5] overflow-hidden hover:bg-cyan-100" style="transition: all 0.3s;" type="button">
     <span class="translate-x-[-55px] text-white group-hover:stroke-white" style="transition: all 0.3s;">طباعة</span>
     <span class="absolute translate-x-[5px] h-full w-[39px] bg-cyan-600 flex items-center justify-center group-hover:w-[149px] group-hover:translate-x-0 " style="transition: all 0.3s;">
         <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
