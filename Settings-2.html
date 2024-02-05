@@ -8,6 +8,7 @@
     <script src="confing.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css"  rel="stylesheet" />
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/datepicker.min.js"></script>
     </head>
 <body class="font-['Janna_LT']">
 <aside class="ml-[-100%] fixed z-10 top-0  px-4 w-full hidden lg:flex flex-col justify-between h-screen border-l bg-white transition duration-300 md:w-4/12 lg:ml-0 lg:w-[25%] xl:w-[20%] 2xl:w-[15%]">
@@ -325,83 +326,67 @@
                     <button class="w-auto max-w-[275px] h-[55px] bg-[#EFEFEF] text-[#A1A1A1] rounded-xl">إعدادات الحساب</button>
                 </div>
             </div>
-                <div class="py-[50px] px-[50px] flex justify-center gap-10">
-                    <button class="group rounded-lg relative w-[321px] h-[38px] flex items-center border border-red-200 bg-[#FFE0E0] overflow-hidden hover:bg-red-200" style="transition: all 0.3s;" type="button">
-                        <span class="translate-x-[-70px] text-[#DE0F0F] group-hover:stroke-white" style="transition: all 0.3s;">الرجاء اكمل بيانات الحساب</span>
-                        <span class="absolute translate-x-[5px] h-full w-[0px] bg-red-400 flex items-center justify-center group-hover:w-[39px] group-hover:translate-x-0 " style="transition: all 0.3s;">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M17.9998 5.99982C17.8123 5.81235 17.558 5.70703 17.2928 5.70703C17.0277 5.70703 16.7733 5.81235 16.5858 5.99982L11.9998 10.5858L7.41382 5.99982C7.22629 5.81235 6.97198 5.70703 6.70682 5.70703C6.44165 5.70703 6.18735 5.81235 5.99982 5.99982C5.81235 6.18735 5.70703 6.44165 5.70703 6.70682C5.70703 6.97198 5.81235 7.22629 5.99982 7.41382L10.5858 11.9998L5.99982 16.5858C5.81235 16.7733 5.70703 17.0277 5.70703 17.2928C5.70703 17.558 5.81235 17.8123 5.99982 17.9998C6.18735 18.1873 6.44165 18.2926 6.70682 18.2926C6.97198 18.2926 7.22629 18.1873 7.41382 17.9998L11.9998 13.4138L16.5858 17.9998C16.7733 18.1873 17.0277 18.2926 17.2928 18.2926C17.558 18.2926 17.8123 18.1873 17.9998 17.9998C18.1873 17.8123 18.2926 17.558 18.2926 17.2928C18.2926 17.0277 18.1873 16.7733 17.9998 16.5858L13.4138 11.9998L17.9998 7.41382C18.1873 7.22629 18.2926 6.97198 18.2926 6.70682C18.2926 6.44165 18.1873 6.18735 17.9998 5.99982Z" fill="#DE0F0F"/>
-                            </svg>
-                        </span>
-                    </button>
-                </div>
             <!-- buttons end -->
             <!-- بداية المربع -->
-            <div class="mt-10 mr-[2.5%]">
+            <div class="mt-10 mx-[2.5%]">
                 <label class="text-base md:text-xl font-bold text-[#25A0D5]">اعدادات الحساب</label>
                 <div class=" mt-7 pr-[2.5%] flex flex-col min-h-[869px] md:min-h-[969px] xl:min-h-[652px]  md:mx-auto rounded-2xl border border-[#D5D5D5]">
                     <div class="mt-10 px-5">
                         <div class=" mt-10  w-full flex justify-center z-10">
-                            <div class="rounded-3xl w-full ">
-                                <div class="mt-10 relative max-w-[470px]" x-data="{ show: true }">
-                                    <input placeholder="كلمة المرور الحالية" :type="show ? 'password' : 'text'" class="mb-11 w-full h-12 text-sm md:text-base text-[#989797] px-4 py-3 rounded-[15px] bg-neutral-100 focus:bg-gray-100 border border-gray-200 focus:outline-none focus:border-cyan-600 block text-start w-auto">
-                                    <div class="flex items-center absolute inset-y-0 left-0 ml-5 text-sm leading-5 ">
-                                        <svg @click="show = !show" :class="{'hidden': !show, 'block':show }"
-                                                class="h-4 text-purple-700" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                                viewbox="0 0 576 512">
-                                                <path fill="#B3B3B3"
-                                                d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z">
-                                                </path>
+                            <div class="rounded-3xl w-fit">
+                                <div class="relative w-full flex justify-center cursor-pointer" >
+                                    <div class="absolute top-[-14px]">
+                                        <img src="imges/Group 1000003182.png" alt="">
+                                    </div>
+                                    <img class="" width="117" height="117" src="imges/Ellipse 76.svg" alt="">
+                                </div>
+                                <div class="flex gap-5 mt-10 max-w-[470px]">
+                                    <input placeholder="الاسم الاول" class="mb-11 w-full h-12 text-sm md:text-base text-[#989797] px-4 py-3 rounded-[15px] bg-neutral-100 focus:bg-gray-100 border border-gray-200 focus:outline-none focus:border-cyan-600 block text-start w-auto">
+                                    <input placeholder="الاسم الاخير" class="mb-11 w-full h-12 text-sm md:text-base text-[#989797] px-4 py-3 rounded-[15px] bg-neutral-100 focus:bg-gray-100 border border-gray-200 focus:outline-none focus:border-cyan-600 block text-start w-auto">
+                                </div>
+                                <div class="relative max-w-[470px]">
+                                    <input type="email" placeholder="البريد الالكتروني" class="mb-11 w-full h-12  max-w-[470px] text-sm md:text-base text-[#989797] px-4 py-3 rounded-[15px] bg-neutral-100 focus:bg-gray-100 border border-gray-200 focus:outline-none focus:border-cyan-600 block text-start ">
+                                </div>
+                                <div class="relative max-w-[470px]">
+                                    <input  placeholder="رقم الهاتف" class="mb-11 w-full h-12   max-w-[470px] text-sm md:text-base text-[#989797] px-4 py-3 rounded-[15px] bg-neutral-100 focus:bg-gray-100 border border-gray-200 focus:outline-none focus:border-cyan-600 block text-start ">
+                                </div>
+                                <div>
+                                </div>
+                                <div class="flex gap-5 mt-10 max-w-[470px]">
+                                    <input placeholder="المدينة" class="mb-11 w-full h-12 text-sm md:text-base text-[#989797] px-4 py-3 rounded-[15px] bg-neutral-100 focus:bg-gray-100 border border-gray-200 focus:outline-none focus:border-cyan-600 block text-start w-auto">
+                                    <div class="relative w-full">
+                                        <div class="absolute bottom-14 end-2.5 flex items-center ps-3.5 pointer-events-none">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect width="24" height="24" rx="6" fill="none"/>
+                                                <path d="M9.11111 4.5V6.75M14.8889 4.5V6.75M5.86111 9.8175H18.1389M18.5 9.375V15.75C18.5 18 17.4167 19.5 14.8889 19.5H9.11111C6.58333 19.5 5.5 18 5.5 15.75V9.375C5.5 7.125 6.58333 5.625 9.11111 5.625H14.8889C17.4167 5.625 18.5 7.125 18.5 9.375Z" stroke="#25A0D5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M15.4915 13.5H15.5M15.4915 16.5H15.5M11.9962 13.5H12.0057M11.9962 16.5H12.0057M8.5 13.5H8.50945M8.5 16.5H8.50945" stroke="#25A0D5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                             </svg>
-                                            <svg @click="show = !show" :class="{'block': !show, 'hidden':show }"
-                                                class="h-4 text-purple-700" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                                viewbox="0 0 640 512">
-                                                <path fill="#B3B3B3"
-                                                d="M320 400c-75.85 0-137.25-58.71-142.9-133.11L72.2 185.82c-13.79 17.3-26.48 35.59-36.72 55.59a32.35 32.35 0 0 0 0 29.19C89.71 376.41 197.07 448 320 448c26.91 0 52.87-4 77.89-10.46L346 397.39a144.13 144.13 0 0 1-26 2.61zm313.82 58.1l-110.55-85.44a331.25 331.25 0 0 0 81.25-102.07 32.35 32.35 0 0 0 0-29.19C550.29 135.59 442.93 64 320 64a308.15 308.15 0 0 0-147.32 37.7L45.46 3.37A16 16 0 0 0 23 6.18L3.37 31.45A16 16 0 0 0 6.18 53.9l588.36 454.73a16 16 0 0 0 22.46-2.81l19.64-25.27a16 16 0 0 0-2.82-22.45zm-183.72-142l-39.3-30.38A94.75 94.75 0 0 0 416 256a94.76 94.76 0 0 0-121.31-92.21A47.65 47.65 0 0 1 304 192a46.64 46.64 0 0 1-1.54 10l-73.61-56.89A142.31 142.31 0 0 1 320 112a143.92 143.92 0 0 1 144 144c0 21.63-5.29 41.79-13.9 60.11z">
-                                                </path>
-                                            </svg>
+                                        </div>
+                                        <input datepicker type="text"  placeholder="تاريخ الميلاد" class="mb-11 w-full h-12 text-sm md:text-base text-[#989797] px-4 py-3 rounded-[15px] bg-neutral-100 focus:bg-gray-100 border border-gray-200 focus:outline-none focus:border-cyan-600 block text-start w-auto">
                                     </div>
                                 </div>
-                                <div class="relative max-w-[470px]" x-data="{ show: true }">
-                                    <input placeholder="كلمة المرور الجديدة" :type="show ? 'password' : 'text'" class="mb-11 w-full h-12  max-w-[470px] text-sm md:text-base text-[#989797] px-4 py-3 rounded-[15px] bg-neutral-100 focus:bg-gray-100 border border-gray-200 focus:outline-none focus:border-cyan-600 block text-start ">
-                                    <div class="flex items-center absolute inset-y-0 left-0 ml-5 text-sm leading-5">
-                                        <svg @click="show = !show" :class="{'hidden': !show, 'block':show }"
-                                                class="h-4 text-purple-700" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                                viewbox="0 0 576 512">
-                                                <path fill="#B3B3B3"
-                                                d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z">
-                                            </path>
-                                        </svg>
-                                        <svg @click="show = !show" :class="{'block': !show, 'hidden':show }"
-                                                class="h-4 text-purple-700" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                                viewbox="0 0 640 512">
-                                                <path fill="#B3B3B3"
-                                                d="M320 400c-75.85 0-137.25-58.71-142.9-133.11L72.2 185.82c-13.79 17.3-26.48 35.59-36.72 55.59a32.35 32.35 0 0 0 0 29.19C89.71 376.41 197.07 448 320 448c26.91 0 52.87-4 77.89-10.46L346 397.39a144.13 144.13 0 0 1-26 2.61zm313.82 58.1l-110.55-85.44a331.25 331.25 0 0 0 81.25-102.07 32.35 32.35 0 0 0 0-29.19C550.29 135.59 442.93 64 320 64a308.15 308.15 0 0 0-147.32 37.7L45.46 3.37A16 16 0 0 0 23 6.18L3.37 31.45A16 16 0 0 0 6.18 53.9l588.36 454.73a16 16 0 0 0 22.46-2.81l19.64-25.27a16 16 0 0 0-2.82-22.45zm-183.72-142l-39.3-30.38A94.75 94.75 0 0 0 416 256a94.76 94.76 0 0 0-121.31-92.21A47.65 47.65 0 0 1 304 192a46.64 46.64 0 0 1-1.54 10l-73.61-56.89A142.31 142.31 0 0 1 320 112a143.92 143.92 0 0 1 144 144c0 21.63-5.29 41.79-13.9 60.11z">
-                                                </path>
-                                        </svg>
+                            <div class="flex justify-between max-w-[470px] gap-5">
+                                <div >
+                                    <label class=" text-sm">الجنس</label>
+                                    <div class="flex gap-2 items-center mt-4">
+                                        <label for="">ذكر</label>
+                                        <input type="radio" name="radio-group" class="rounded-full">
+                                        <label for="">انثى</label>
+                                        <input type="radio" name="radio-group" class="rounded-full">
                                     </div>
                                 </div>
-                                <div class="relative max-w-[470px]" x-data="{ show: true }">
-                                    <input placeholder="تاكيد كلمة المرور الجديدة" :type="show ? 'password' : 'text'" class="mb-11 w-full h-12   max-w-[470px] text-sm md:text-base text-[#989797] px-4 py-3 rounded-[15px] bg-neutral-100 focus:bg-gray-100 border border-gray-200 focus:outline-none focus:border-cyan-600 block text-start ">
-                                    <div class="flex items-center absolute inset-y-0 left-0 ml-5 text-sm leading-5">
-                                        <svg @click="show = !show" :class="{'hidden': !show, 'block':show }"
-                                                class="h-4 text-purple-700" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                                viewbox="0 0 576 512">
-                                                <path fill="#B3B3B3"
-                                                d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z">
-                                                </path>
-                                        </svg>
-                                        <svg @click="show = !show" :class="{'block': !show, 'hidden':show }"
-                                                class="h-4 text-purple-700" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                                viewbox="0 0 640 512">
-                                                <path fill="#B3B3B3"
-                                                d="M320 400c-75.85 0-137.25-58.71-142.9-133.11L72.2 185.82c-13.79 17.3-26.48 35.59-36.72 55.59a32.35 32.35 0 0 0 0 29.19C89.71 376.41 197.07 448 320 448c26.91 0 52.87-4 77.89-10.46L346 397.39a144.13 144.13 0 0 1-26 2.61zm313.82 58.1l-110.55-85.44a331.25 331.25 0 0 0 81.25-102.07 32.35 32.35 0 0 0 0-29.19C550.29 135.59 442.93 64 320 64a308.15 308.15 0 0 0-147.32 37.7L45.46 3.37A16 16 0 0 0 23 6.18L3.37 31.45A16 16 0 0 0 6.18 53.9l588.36 454.73a16 16 0 0 0 22.46-2.81l19.64-25.27a16 16 0 0 0-2.82-22.45zm-183.72-142l-39.3-30.38A94.75 94.75 0 0 0 416 256a94.76 94.76 0 0 0-121.31-92.21A47.65 47.65 0 0 1 304 192a46.64 46.64 0 0 1-1.54 10l-73.61-56.89A142.31 142.31 0 0 1 320 112a143.92 143.92 0 0 1 144 144c0 21.63-5.29 41.79-13.9 60.11z">
-                                                </path>
-                                        </svg>
+                                <div >
+                                    <label class="text-sm">هل تعمل بالمنشأة التابعة لهذا الحساب؟</label>
+                                    <div class="flex gap-2 items-center mt-4">
+                                        <label for="">نعم</label>
+                                        <input type="radio" name="radio-group-1" class="rounded-full">
+                                        <label for="">لا</label>
+                                        <input type="radio" name="radio-group-1" class="rounded-full">
                                     </div>
                                 </div>
+                            </div>
                                 <div class="">
-                                    <button type="button" class="shadow-blue-500/50 shadow-2xl mt-10 w-full text-white bg-[#25A0D5] hover:bg-cyan-600 focus:ring-4 focus:ring-primary-300 font-bold text-sm pb-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800 rounded-[15px] text-center block text-center text-xl h-[55px] max-w-[470px]">حفظ البيانات</button>
+                                    <button type="button" class="mb-14 shadow-blue-500/50 shadow-2xl mt-10 w-full text-white bg-[#25A0D5] hover:bg-cyan-600 focus:ring-4 focus:ring-primary-300 font-bold text-sm pb-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800 rounded-[15px] text-center block text-center text-xl h-[55px] max-w-[470px]">حفظ البيانات</button>
                                 </div>
                             </div>
                         </div>
